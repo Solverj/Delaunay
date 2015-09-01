@@ -36,8 +36,8 @@ class DT extends JFrame{
 
 			    //  g.drawString(""+p,xDraw(d.x[p]-SUB),yDraw(d.y[p]+SUB));
 			    if (d.n < d.DebugLimit) g.drawString(p+"("+d.x[p]+","+d.y[p]+")",
-			          xDraw(d.x[p],0),yDraw(d.y[p],0));
-			    else if (d.n < d.DebugLimit*2)g.drawString(p+"",xDraw(d.x[p],0),yDraw(d.y[p],0));
+			          xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
+			    else if (d.n < d.DebugLimit*2)g.drawString(p+"",xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
 				 g.drawOval (xDraw(d.x[p],SIZE/2),yDraw(d.y[p],SIZE/2),SIZE,SIZE);
 				 g.fillOval (xDraw(d.x[p],SIZE/2),yDraw(d.y[p],SIZE/2),SIZE,SIZE);
 	     }

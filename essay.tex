@@ -3,11 +3,12 @@
 \usepackage[T1]{fontenc,url}
 \urlstyle{sf}
 \usepackage{babel,textcomp,csquotes,varioref,graphicx}
-\usepackage{amsmath,pstricks,subfigure,fixltx2e,caption,epsfig,tikz}
+\usepackage{amsmath,pstricks,subfigure,fixltx2e,caption,epsfig,tikz,bookman}
 \usepackage[backend=biber,style=numeric-comp]{biblatex}
 \def\SB#1{\textsubscript{#1}}
 \title{Hvordan kan man visualisere en overflate ved hjelp av Delaunay triangulering}
 \author{Sølve Rene Johnsen}
+\addbibresource{library.bib}
 \begin{document}
 \maketitle{}
 \section*{Introduksjon}
@@ -102,8 +103,8 @@ bredde først søk, hvor man ser på trekanten man tegner sin omsirkel ikke har
 noen andre trekanter i seg.
 \subsection{Voronoi diagram}
 Et Voronoi diagram omhandler å partisjonere områder mellom punktene slik at
-ethvert punkt P_i er omgitt av et polygon hvor alle punktene inne i
-polygonet er nærmere P_i enn alle andre punkter i P.
+ethvert punkt P\_i er omgitt av et polygon hvor alle punktene inne i
+polygonet er nærmere P\_i enn alle andre punkter i P.
 Voronoi og Delaunay er duale, ved duale menes at man kan gå fra en Delaunay
 triangulering til Voronoi diagrammet og tilbake ved enkle algoritmer.
 Skal man fra en Delaunay triangulering det duale Voronoi diagrammet tegner
@@ -331,7 +332,8 @@ java.awt.Graphics.drawString(string tekst, int x, int y) for å tegne
 Ved å bruke JFrame får man et enkelt vindu som man kan bruke til å 
 legge vårt grafikk bilde inn i. Man må først sette opp vinduet til hva det
 skal hete, hvilken oppløsning det skal vises i.
-Verdt å legge merke til er at JFrame ikke er ``thread-safe''.
+Verdt å legge merke til er at JFrame ikke er ``thread-safe''
 
+
+\printbibliography
 \end{document}
-

@@ -8,7 +8,7 @@ public class NPartallsPunkter {
 	int n;
 	byte [] bitArr;
 	static int maxXY, xShift =3;
-	int scaleFactor = 9;  // scaleFactor * scaleFactor * n= antall mulige punkter i planet (her: 4*n)
+	int scaleFactor = 3;  // scaleFactor * scaleFactor * n= antall mulige punkter i planet (her: 4*n)
 	final  int [] bitMask ={1,2,4,8,16,32,64,128};
 
 	NPartallsPunkter(int n) {
@@ -30,13 +30,13 @@ public class NPartallsPunkter {
 
 	public void fyllArrayer(int [] x, int[] y) {
 		int next =0;
-		int xval, yval;
+		int xval, yval,maxHalve = maxXY/2;;
 		while (next < n) {
 			do{
-				xval = r.nextInt(maxXY)+1;
-				if ((xval &1)>0) xval++;
-				yval = r.nextInt(maxXY)+1;
-				if ((yval &1)>0) yval++;
+				xval = r.nextInt(maxHalve)+1;
+				 xval <<=1;          // now an even number
+				yval = r.nextInt(maxHalve)+1;
+				yval <<=1;  // now an even number
 			} while (used (xval, yval));
 			x[next] = xval;
 			y[next] = yval;

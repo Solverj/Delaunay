@@ -1,0 +1,23 @@
+@book{ Tufte,
+author = {Edward R. Tufte},
+title = {The visual display of quantitive information},
+publisher = {Graphics Press},
+year = 2001
+}
+@misc{ Delaunay,
+author = {Wikipedia},
+title = {Delaunay triangulering},
+url = {https://en.wikipedia.org/wiki/Delaunay_triangulation}
+year = 2015.
+
+@misc{ Delaunay,
+author = {Wikipedia},
+title = {Kartgeneralisering},
+url = {https://en.wikipedia.org/wiki/Cartographic_generalization}
+year = 2015.
+
+@misc{ Delaunay,
+author = {Wikipedia},
+title = {Kartprojeksjon},
+url = {https://en.wikipedia.org/wiki/Map_projection}
+year = 2015.
