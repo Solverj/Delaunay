@@ -1,0 +1,7 @@
+class integerTest{
+    public static void main(string[] args){
+	int p;
+	p = (int)10/9001;
+	System.out.println(p);
+    }
+}
