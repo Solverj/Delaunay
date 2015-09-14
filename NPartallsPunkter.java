@@ -13,7 +13,7 @@ public class NPartallsPunkter {
 
 	NPartallsPunkter(int n) {
 		this.n =n;
-		maxXY = Math.max(10,(int) Math.sqrt(n) * scaleFactor); // største X og Y verdi
+		maxXY = Math.max(10,(int) Math.sqrt(n) * scaleFactor); // stÃ¸rste X og Y verdi
 		while ((1<<xShift) < maxXY) xShift++;
 		xShift = xShift - 3;                    // 8 bits per byte
 		bitArr = new byte[(maxXY<<xShift |(maxXY>>3))  + 5];

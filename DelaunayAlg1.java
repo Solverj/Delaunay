@@ -12,7 +12,7 @@ class DelaunayAlg1 {
 
 		if (args.length != 4 ) {
 			System.out.println(" use: >java DelaunayAlg1 <n num points>"+
-			                   " <points  per box>  <debugfil> <dataOutput>");
+			" <points  per box>  <debugfil> <dataOutput>");
 		} else {
 			fil = args[2];
 			data = new Out(args[3]);
@@ -20,10 +20,9 @@ class DelaunayAlg1 {
 			d.PerformAlg(args);
 		}
 	} // end main
-
-    DT dt;
-    static String fil ;
-    static Out ut, data ;
+	DT dt;
+	static String fil ;
+	static Out ut, data ;
 
 	static void println(String s) {
 		ut= new Out(fil,true);
@@ -33,40 +32,40 @@ class DelaunayAlg1 {
 	}
 
 	static void print(String s) {
-			ut= new Out(fil,true);
-			ut.out(s) ;
-		    ut.close();
-			System.out.print(s);
+		ut= new Out(fil,true);
+		ut.out(s) ;
+		ut.close();
+		System.out.print(s);
 	}
 
 	void outputDT() {
-	// output n datapoints sorted)
+		// output n datapoints sorted)
 		data.outln(n+"");
 		// output CoHull
 		data.out("Cohull, num: "+ theCoHull.numElem+"points:");
 		for (int i = 0; i < theCoHull.numElem; i++){
-				data.outln(theCoHull.dtEdges[i]+" ");
-		 }
+			data.outln(theCoHull.dtEdges[i]+" ");
+		}
 
 		// output Datapoints
-			for (int i = 0;i < n; i++){
-				data.outln(""+i + " " +x[i] +" "+y[i]);
-		   }
+		for (int i = 0;i < n; i++){
+			data.outln(""+i + " " +x[i] +" "+y[i]);
+		}
 
-		 // output Delaunay neghbours to al points - first is nearest neighbour
-		   int [] nb;
-			for (int i = 0;i < n; i++){
-				nb = delEdges[i];
-				data.out(""+i+ " num= "+nb.length+": ");
+		// output Delaunay neghbours to al points - first is nearest neighbour
+		int [] nb;
+		for (int i = 0;i < n; i++){
+			nb = delEdges[i];
+			data.out(""+i+ " num= "+nb.length+": ");
 
-				for (int j =0; j < nb.length;j++){
-					data.out(nb[j]+" ");
-				}
-				data.outln();
-
+			for (int j =0; j < nb.length;j++){
+				data.out(nb[j]+" ");
 			}
-	       data.close();
-    }// end outputPoints
+			data.outln();
+
+		}
+		data.close();
+	}// end outputPoints
 
 
 	void PerformAlg(String [] args){
@@ -76,7 +75,7 @@ class DelaunayAlg1 {
 		NUM_PER_BOX = Integer.parseInt(args[1]);
 
 		// println("\nDelaunay triangulering med: " + n + " punkter og ca."+NUM_PER_BOX+" punkter per boks. "+
-	     //        ", fil:"+args[2]+"\n");
+		//        ", fil:"+args[2]+"\n");
 
 		long t;
 		double cTime,dtTime,complTime;
@@ -86,21 +85,21 @@ class DelaunayAlg1 {
 		t = System.nanoTime();
 		initiate();
 		cTime = (double) (System.nanoTime()-t)/1000000.0;
-	    println("\nTid: Initiate:" + Format.align(cTime,10,3)+" msek, dvs. "+Format.align((cTime*1.0/n),10,5)+ " msek. per punkt");
-		 //    dumpPoints("Initiate");
+		println("\nTid: Initiate:" + Format.align(cTime,10,3)+" msek, dvs. "+Format.align((cTime*1.0/n),10,5)+ " msek. per punkt");
+		//    dumpPoints("Initiate");
 
 
-	   // 2) find convex hull
+		// 2) find convex hull
 		t = System.nanoTime();
 		int numCholl =  cohull(allNB);
 		cTime = (double) (System.nanoTime()-t)/1000000.0;
-		println("\nTid: Cohull fant:"+theCoHull.numElem+" punkter på cohull. Tid:" + Format.align(cTime,10,3)+" msek, dvs. "
-		  +Format.align((cTime*1.0/n),10,6)+ " msek. per punkt");
+		println("\nTid: Cohull fant:"+theCoHull.numElem+" punkter pï¿½ cohull. Tid:" + Format.align(cTime,10,3)+" msek, dvs. "
+		+Format.align((cTime*1.0/n),10,6)+ " msek. per punkt");
 		//if (n < DebugLimit)			dumpPoints("Etter cohull");
 
-	  //  dt = new DT (d);
+		//  dt = new DT (d);
 
-	   // 3) Find near neighbours and dt edges - do not need the convex hull
+		// 3) Find near neighbours and dt edges - do not need the convex hull
 		t = System.nanoTime();
 		numNNeigh= doAlg1Delaunay(theCoHull);
 		dtTime= (double) (System.nanoTime()-t)/1000000.0;
@@ -118,187 +117,218 @@ class DelaunayAlg1 {
 		totAntTriangler=  theCoHull.numElem + 2*antIndrePunkter -2;
 		println("Ant pkt:"+n+", antIndrePkt:"+antIndrePunkter+", totAntKanter:"+totAntKanter+", totAntTriangler:"+totAntTriangler);
 
-		println("\nDT-kanter funnet:"+ (numNNeigh/2)+ " unike med " +NUM_PER_BOX+" gj.snitt punkter per box på "  +
-							Format.align(dtTime,10,3)+"msek , \ndvs. "+Format.align(dtTime/n,8,4)+
-							" millisek. per punkt, og:" +Format.align(2*(numNNeigh*1.0/(2*n)),10,5)+
-						   " snitt kanter. per punkt.\n Prosent av alle funnet:"+
-							Format.align((100.0*(numNNeigh/2)/totAntKanter),10,4)+"%"+
-							"\n prosent funnet (inkl missing):"+
-							Format.align((100.0*((numNNeigh/2)+missing/2)/totAntKanter),10,4)+"%");
+		println("\nDT-kanter funnet:"+ (numNNeigh/2)+ " unike med " +NUM_PER_BOX+" gj.snitt punkter per box pï¿½ "  +
+		Format.align(dtTime,10,3)+"msek , \ndvs. "+Format.align(dtTime/n,8,4)+
+		" millisek. per punkt, og:" +Format.align(2*(numNNeigh*1.0/(2*n)),10,5)+
+		" snitt kanter. per punkt.\n Prosent av alle funnet:"+
+		Format.align((100.0*(numNNeigh/2)/totAntKanter),10,4)+"%"+
+		"\n prosent funnet (inkl missing):"+
+		Format.align((100.0*((numNNeigh/2)+missing/2)/totAntKanter),10,4)+"%");
 
-	   for (int i = 0; i < n; i++) {
-		   if (delEdges [i].length < minDK ){minDK = delEdges [i].length; minPDK =i;}
-		   if (delEdges [i].length > maxDK ){maxDK =delEdges [i].length; maxPDK =i;}
-	   }
-	   print("Min # DE :"+minDK+" for point:"+minPDK);
-	   println(", max # DE :"+maxDK+" for point:"+maxPDK);
-	   println("Cocirkulartitet (4 eller flere punkter, antar 4) funnet:"+ Format.align((numCoCircular/4.0),10,2)+"  ganger.");
+		for (int i = 0; i < n; i++) {
+			if (delEdges [i].length < minDK ){minDK = delEdges [i].length; minPDK =i;}
+			if (delEdges [i].length > maxDK ){maxDK =delEdges [i].length; maxPDK =i;}
+		}
+		print("Min # DE :"+minDK+" for point:"+minPDK);
+		println(", max # DE :"+maxDK+" for point:"+maxPDK);
+		println("Cocirkulartitet (4 eller flere punkter, antar 4) funnet:"+ Format.align((numCoCircular/4.0),10,2)+"  ganger.");
 
-      if (n< DebugLimit)   dumpPoints("Etter nærmeste nabo");
+		if (n< DebugLimit)   dumpPoints("Etter nï¿½rmeste nabo");
 
-	 if (n < 2000)    dt = new DT (d);
+		if (n < 2000)    dt = new DT (d);
 
-    }//----------------------------------------------------------------( end PerformAlg, start Data structure) --------
+	}//----------------------------------------------------------------( end PerformAlg, start Data structure) --------
 
-	 /** Data Structure - Delaunay model: */
-	 int n ;           // number of points
-	 int numNNeigh =0; // number of neigbours tested avg
-	 final static int  SCALING = 3,
-	                 MIN_NUM_FOUND = 5;  // upper average limit
-	 int NUM_PER_BOX,
-	     MAX_X,
-		 MAX_Y,
-		 NUM_BOX,        // number of boxes (in x and y - direction)
-		 BOX_SIDE,
-		 NUM_X_BOXES,
-		 NUM_Y_BOXES,
-		 numCoCircular =0,
-		 searchSize;     // sourroung box when searching for close neighbours (= 3,5,7,..)
-	 int DebugLimit = 60 ;
-     double EPSILON;        // Tolerance for comparing double value (cocirculat case)
-	 int [] x, 				// x-values of points
-			y; 				// y-value of points
-	 int [][]box;			// grid structure in both x- and y over area. Approx NUM_PER_BOX in ech box;
-	 int [][]delEdges ;     //delEdges[i][] = All Delaunay Edges to point 'i'
-	 //int [] numDE;         // numDE[i] =  number of Delaunay Edges to point i
-	 int minDK = 60, minPDK =0, maxDK =0, maxPDK;  // min and max DK found by nearesr neighbours
+	/** Data Structure - Delaunay model: */
+	int n ;           // number of points
+	int numNNeigh =0; // number of neigbours tested avg
+	final static int  SCALING = 3,
+	MIN_NUM_FOUND = 5;  // upper average limit
+	int NUM_PER_BOX,
+	MAX_X,
+	MAX_Y,
+	NUM_BOX,        // number of boxes (in x and y - direction)
+	BOX_SIDE,
+	NUM_X_BOXES,
+	NUM_Y_BOXES,
+	numCoCircular =0,
+	searchSize;     // sourroung box when searching for close neighbours (= 3,5,7,..)
+	int DebugLimit = 60 ;
+	double EPSILON;        // Tolerance for comparing double value (cocirculat case)
+	int [] x, 				// x-values of points
+	y, 				// y-value of points
+	z;
+	int [][]box;			// grid structure in both x- and y over area. Approx NUM_PER_BOX in ech box;
+	int [][]delEdges ;     //delEdges[i][] = All Delaunay Edges to point 'i'
+	//int [] numDE;         // numDE[i] =  number of Delaunay Edges to point i
+	int minDK = 60, minPDK =0, maxDK =0, maxPDK;  // min and max DK found by nearesr neighbours
 
-	 int antIndrePunkter;         // = n - theCoHull.numElem;
-	 int totAntKanter;            // = 2*theCoHull.numElem + 3*antIndrePunkter -3;
-	 int totAntTriangler;         // =  theCoHull.numElem + 2*antIndrePunkter -2;
-	 int   numK4 =0;                 // number of DK funnet av Th. 4
+	int antIndrePunkter;         // = n - theCoHull.numElem;
+	int totAntKanter;            // = 2*theCoHull.numElem + 3*antIndrePunkter -3;
+	int totAntTriangler;         // =  theCoHull.numElem + 2*antIndrePunkter -2;
+	int   numK4 =0;                 // number of DK funnet av Th. 4
 
-	 HashMap <Integer,Integer> coHullMap;
-	 NList theCoHull = new NList();           // The points of the convex hull
-     //	       theCoCircular = new NList();       // A list of the points that are coCircular (initiall not ordered)
-     // end data model DT of n points ---------------------------------------------(end data model)---------------------
-    int [] allNB = new int [100] ;   // assumed way beyond max number of neigbours to a node
+	HashMap <Integer,Integer> coHullMap;
+	NList theCoHull = new NList();           // The points of the convex hull
+	//	       theCoCircular = new NList();       // A list of the points that are coCircular (initiall not ordered)
+	// end data model DT of n points ---------------------------------------------(end data model)---------------------
+	int [] allNB = new int [100] ;   // assumed way beyond max number of neigbours to a node
 
+	void kotetrekking(){
+
+		class doubleInteger{
+			int x;
+			int y;
+		}
+
+		final int blueLowerBound = -100;
+		final int blueUpperBound = 0;
+
+		final int greenLowerBound = 1;
+		final int greenUpperBound = 50;
+
+		final int greyLowerBound = 51;
+		final int greyUpperBound = 100;
+
+		int a,b;
+		List<doubleInteger> blueSet = new LinkedList<doubleInteger>();
+		List<doubleInteger> greenSet = new LinkedList<doubleInteger>();
+		List<doubleInteger> greySet = new LinkedList<doubleInteger>();
+
+		for (int i = 0; i < n ; i++){
+			a = i;
+			for(int j = 0; j < delEdges[i].length; j++){
+				b = delEdges[i][j];
+			}
+		}
+
+	}
 
 	// Debugging tool
-    void dumpPoints(String s) {
-		 println ("Dump av DataPoints: "+s);
-		 for (int i=0;i < n; i++){
-		   print(" Point i:"+i+" ("+x[i]+","+y[i]+") med DK til:");
-		   if (delEdges[i] != null ) {
-			   for (int j =0; j < delEdges[i].length; j++){
-				 if(j >0) print(",");
-				 print(delEdges[i][j]+"");
-			   }
-		   }
-		   println("");
-		 }
+	void dumpPoints(String s) {
+		println ("Dump av DataPoints: "+s);
+		for (int i=0;i < n; i++){
+			print(" Point i:"+i+" ("+x[i]+","+y[i]+") med DK til:");
+			if (delEdges[i] != null ) {
+				for (int j =0; j < delEdges[i].length; j++){
+					if(j >0) print(",");
+					print(delEdges[i][j]+"");
+				}
+			}
+			println("");
+		}
 	}// end dumpPoints
 
-	// Sjekk konistens av DK-kanter (Hvis a-b, så b-a
-	// ikke sjekk på kryssende kanter
+	// Sjekk konistens av DK-kanter (Hvis a-b, sÃ¥ b-a
+	// ikke sjekk pÃ¥ kryssende kanter
 	int sjekkDK (boolean output) {
-	  int numErr =0, numPrinted =0, maxPrinted =10;
-	  for (int p = 0; p < n; p++) {
-		  // for each delaunay nerghbour pn to p, check that p is Del-neighb to pn
-		  for (int pn : delEdges[p]) {
-			  boolean ok = false;
-			  for (int i : delEdges[pn]){
-				  if (i == p) { ok = true; break;}
-			  }
-			  if (! ok) {
-				  numErr ++;
-				  if (output && numPrinted < maxPrinted ){
+		int numErr =0, numPrinted =0, maxPrinted =10;
+		for (int p = 0; p < n; p++) {
+			// for each delaunay nerghbour pn to p, check that p is Del-neighb to pn
+			for (int pn : delEdges[p]) {
+				boolean ok = false;
+				for (int i : delEdges[pn]){
+					if (i == p) { ok = true; break;}
+				}
+				if (! ok) {
+					numErr ++;
+					if (output && numPrinted < maxPrinted ){
 						numPrinted++;
 
 						for (int j =0; j < delEdges[p].length; j++){
-							 if(j >0) print(",");
-							 print(delEdges[p][j]+"");
+							if(j >0) print(",");
+							print(delEdges[p][j]+"");
 						}
 						print("\n  D-neighb for "+pn+": ");
 						for (int j =0; j < delEdges[pn].length; j++){
-							 if(j >0) print(",");
-							 print(delEdges[pn][j]+"");
+							if(j >0) print(",");
+							print(delEdges[pn][j]+"");
 						}
 						print("\n");
 						if ( numPrinted ==  maxPrinted)
-		                   println ("...............etc.................");
+						println ("...............etc.................");
 					} // erroroutput
-			  } // error
-		   } // end all D neighbours to p
-	   } // end p - all points
-	   println("Number of not matching Delaunay neghbours:"+numErr);
-	   return numErr;
+				} // error
+			} // end all D neighbours to p
+		} // end p - all points
+		println("Number of not matching Delaunay neghbours:"+numErr);
+		return numErr;
 	}// end sjekkDK
 
 
 	// debugging
 	void dumpBox(String s){
-		 print("\nBOX-dump:"+s+", BOX_SIDE:"+BOX_SIDE+
-		        ", NUM_X_BOXES:"+NUM_X_BOXES+", MAX_X:"+MAX_X);
-		 for (int xx = 0; xx <= NUM_X_BOXES; xx++){
-			 print("\nbox["+xx+"][]:");
-			 for (int yy = 0; yy<= NUM_Y_BOXES;yy++){
-				 print(box[xx][yy]+",");
-			 }
-		 }
-		 println("");
+		print("\nBOX-dump:"+s+", BOX_SIDE:"+BOX_SIDE+
+		", NUM_X_BOXES:"+NUM_X_BOXES+", MAX_X:"+MAX_X);
+		for (int xx = 0; xx <= NUM_X_BOXES; xx++){
+			print("\nbox["+xx+"][]:");
+			for (int yy = 0; yy<= NUM_Y_BOXES;yy++){
+				print(box[xx][yy]+",");
+			}
+		}
+		println("");
 	}// end dumpBox
 
-    // Initiate data structure ------
+	// Initiate data structure ------
 	void initiate(){
-	// -------------------------------(start initialize data structure)---------------
+		// -------------------------------(start initialize data structure)---------------
 
-	   MAX_X = (int) Math.sqrt(n)*SCALING +1; // must have room for non-data
-	                                          // points in integer x,y-plane
-	   MAX_Y = MAX_X;
-	   EPSILON = 10.0/MAX_X;
-	   int numP=0;
-	   long mb1,mb2;
+		MAX_X = (int) Math.sqrt(n)*SCALING +1; // must have room for non-data
+		// points in integer x,y-plane
+		MAX_Y = MAX_X;
+		EPSILON = 10.0/MAX_X;
+		int numP=0;
+		long mb1,mb2;
 
-	   Random r = new Random(1237);
-	   x = new int [n];
-	   y = new int [n];
-	   Runtime runtime = Runtime.getRuntime();
-	   delEdges = new int[n][];
+		Random r = new Random(1237);
+		x = new int [n];
+		y = new int [n];
+		z = new int [n];
+		Runtime runtime = Runtime.getRuntime();
+		delEdges = new int[n][];
 
-	   NUM_BOX = n/NUM_PER_BOX+1;
+		NUM_BOX = n/NUM_PER_BOX+1;
 
-	   // make NUM_BOX a square
-	   while (! (((int) Math.sqrt(NUM_BOX))*((int) Math.sqrt(NUM_BOX)) == NUM_BOX))
-	         NUM_BOX++;
-	   NUM_X_BOXES = (int)Math.sqrt(NUM_BOX);
-	   NUM_Y_BOXES= NUM_X_BOXES;
-	   BOX_SIDE = (int) (MAX_X/NUM_X_BOXES);
-	   if (NUM_X_BOXES*BOX_SIDE < MAX_X) BOX_SIDE++;
-	   box = new int[NUM_X_BOXES+1][NUM_Y_BOXES+1];  // need dummy last elements
+		// make NUM_BOX a square
+		while (! (((int) Math.sqrt(NUM_BOX))*((int) Math.sqrt(NUM_BOX)) == NUM_BOX))
+		NUM_BOX++;
+		NUM_X_BOXES = (int)Math.sqrt(NUM_BOX);
+		NUM_Y_BOXES= NUM_X_BOXES;
+		BOX_SIDE = (int) (MAX_X/NUM_X_BOXES);
+		if (NUM_X_BOXES*BOX_SIDE < MAX_X) BOX_SIDE++;
+		box = new int[NUM_X_BOXES+1][NUM_Y_BOXES+1];  // need dummy last elements
 
-	   // make BOX_SIDE at least as big as BOX_SIDE*NUM_BOX >= MAX_X
-	   while ( BOX_SIDE*NUM_X_BOXES < MAX_X) BOX_SIDE++;
+		// make BOX_SIDE at least as big as BOX_SIDE*NUM_BOX >= MAX_X
+		while ( BOX_SIDE*NUM_X_BOXES < MAX_X) BOX_SIDE++;
 
-	  // cohull = new boolean[n]; // default 'false'
-	  coHullMap = new HashMap<Integer,Integer>((int) Math.sqrt(n)+10); // apprx size og coHull
+		// cohull = new boolean[n]; // default 'false'
+		coHullMap = new HashMap<Integer,Integer>((int) Math.sqrt(n)+10); // apprx size og coHull
 
-	  // 1)  initiate with random numbers -
-	  // might here alternativly read datapoints from file
-	  new NPartallsPunkter(n).fyllArrayer(x,y);
+		// 1)  initiate with random numbers -
+		// might here alternativly read datapoints from file
+		new NPartallsPunkter(n).fyllArrayer(x,y);
+		new Zarray().bygg(x,y,z);
+		println("** NUM_BOX:"+NUM_BOX+",BOX_SIDE:" + BOX_SIDE+", MAX_X/Y:" +
+		MAX_X+ ", NUM_X/Y_BOXES:"+NUM_X_BOXES+ ", MIN_NUM_FOUND:"+MIN_NUM_FOUND);
 
-        println("** NUM_BOX:"+NUM_BOX+",BOX_SIDE:" + BOX_SIDE+", MAX_X/Y:" +
-         MAX_X+ ", NUM_X/Y_BOXES:"+NUM_X_BOXES+ ", MIN_NUM_FOUND:"+MIN_NUM_FOUND);
+		// 2) Sort on first x and then for each x-stripe on y
+		//    create boxes and their borders
+		radix2(x,y,0,x.length); // sort on x and move corresponding y-values
 
-	  // 2) Sort on first x and then for each x-stripe on y
-	  //    create boxes and their borders
-	  radix2(x,y,0,x.length); // sort on x and move corresponding y-values
+		// dumpPoints("After first x-sort");
 
-	 // dumpPoints("After first x-sort");
+		int low =0, high  =0;
+		int xVal = BOX_SIDE;
+		int boxIndex=0;
+		box[0][0] =0 ; // start of first box
 
-	  int low =0, high  =0;
-	  int xVal = BOX_SIDE;
-	  int boxIndex=0;
-	  box[0][0] =0 ; // start of first box
+		int [] bbox;   // dummy for box[i]; i.e those points with similar x-values
 
-	  int [] bbox;   // dummy for box[i]; i.e those points with similar x-values
-
-	  // find the boxes
-      for (int i = 0; i <= NUM_X_BOXES; i++) {
-	   // test i < NUM_X_BOXES if extra row and collumn in box is removed
-		    bbox = box[i];
-		    boxIndex =0;
+		// find the boxes
+		for (int i = 0; i <= NUM_X_BOXES; i++) {
+			// test i < NUM_X_BOXES if extra row and collumn in box is removed
+			bbox = box[i];
+			boxIndex =0;
 
 
 			// find new x-stripe
@@ -317,17 +347,17 @@ class DelaunayAlg1 {
 
 			int yInd = low;
 			for (int j = 0; j < NUM_Y_BOXES; j++) {
-			   while (yInd < high && y[yInd] < yVal) {
-					   yInd++;
-			   }
+				while (yInd < high && y[yInd] < yVal) {
+					yInd++;
+				}
 
-			   bbox[++boxIndex] = yInd;
-			   yVal += BOX_SIDE;
+				bbox[++boxIndex] = yInd;
+				yVal += BOX_SIDE;
 
 			} // end new y-box  (for j)
 			xVal += BOX_SIDE;
 
-		    bbox[NUM_Y_BOXES] = yInd;	//
+			bbox[NUM_Y_BOXES] = yInd;	//
 		} // end find boxes
 
 
@@ -341,101 +371,101 @@ class DelaunayAlg1 {
 	*   of Delaunay Edges and return number of points on 'cohull'.
 	*******************************************************************************/
 	int cohull(int []allNB){
-	   int minx =0,maxx=0,miny=0,maxy=0;
-	   for (int i = 1; i<n; i++){
-		   if (x[i] < x[minx]) minx =i;
-		   if (x[i] > x[maxx]) maxx =i;
-		   if (y[i] < y[miny]) miny =i;
-		   if (y[i] > y[maxy]) maxy =i;
-	   }
-	   theCoHull.put(minx);
-	   coHullMap.put(minx,minx);
+		int minx =0,maxx=0,miny=0,maxy=0;
+		for (int i = 1; i<n; i++){
+			if (x[i] < x[minx]) minx =i;
+			if (x[i] > x[maxx]) maxx =i;
+			if (y[i] < y[miny]) miny =i;
+			if (y[i] > y[maxy]) maxy =i;
+		}
+		theCoHull.put(minx);
+		coHullMap.put(minx,minx);
 
-	// println(" minx:"+minx+", miny:"+miny+", maxx:"+maxx+", maxy:"+maxy);
-	   if (miny != minx){
-		   theCoHull.putAfter(miny,minx);
-		   coHullMap.put(miny,miny);
-		   cohullRec(minx,miny);
+		// println(" minx:"+minx+", miny:"+miny+", maxx:"+maxx+", maxy:"+maxy);
+		if (miny != minx){
+			theCoHull.putAfter(miny,minx);
+			coHullMap.put(miny,miny);
+			cohullRec(minx,miny);
 		} // new point miny
-	   if (maxx != miny) {
-		   theCoHull.putAfter(maxx,miny);
-		   coHullMap.put(maxx,maxx);
-		   cohullRec(miny,maxx);
-	   } // new point maxx
-	   if (maxy != maxx && maxy != minx){
-		   theCoHull.putAfter(maxy,maxx);
+		if (maxx != miny) {
+			theCoHull.putAfter(maxx,miny);
+			coHullMap.put(maxx,maxx);
+			cohullRec(miny,maxx);
+		} // new point maxx
+		if (maxy != maxx && maxy != minx){
+			theCoHull.putAfter(maxy,maxx);
 			coHullMap.put(maxy,maxy);
-		   cohullRec(maxx,maxy);
-	   }
-	   if (maxy != minx) cohullRec(maxy,minx);
-	   else cohullRec(maxx,minx);
+			cohullRec(maxx,maxy);
+		}
+		if (maxy != minx) cohullRec(maxy,minx);
+		else cohullRec(maxx,minx);
 
-	   return theCoHull.numElem;
+		return theCoHull.numElem;
 	}// end cohull
 
 	/***********************************************************************
-	 * Find  a possible next point minP between p1-p2 closest to p1 on the convex hull;
-	 * recurse on p1-minP  and  minP-p2 .
-	 **********************************************************************/
+	* Find  a possible next point minP between p1-p2 closest to p1 on the convex hull;
+	* recurse on p1-minP  and  minP-p2 .
+	**********************************************************************/
 	void cohullRec(int p1,int p2) {
-	// println("\n\n++ cohullrec param, p1;"+p1+",p2:"+p2);
-		   // finding line ax+by+c =0 from p1 to p2
-		   int [] linep1p2 = new int[3];
-		   linep1p2 = line (linep1p2,p1,p2);
-		   int a = linep1p2[0], b = linep1p2[1], c = linep1p2[2], p2Save = p2;
-		   int minD2=0;  // max squared distance (negative) for point outside p1-p2
-		   int d2;
-		   int minP=-1;
-		   int numNeg =0;
-		   // open boxes
-		   int numx = Math.abs(x[p1]-x[p2])/BOX_SIDE +1;
+		// println("\n\n++ cohullrec param, p1;"+p1+",p2:"+p2);
+		// finding line ax+by+c =0 from p1 to p2
+		int [] linep1p2 = new int[3];
+		linep1p2 = line (linep1p2,p1,p2);
+		int a = linep1p2[0], b = linep1p2[1], c = linep1p2[2], p2Save = p2;
+		int minD2=0;  // max squared distance (negative) for point outside p1-p2
+		int d2;
+		int minP=-1;
+		int numNeg =0;
+		// open boxes
+		int numx = Math.abs(x[p1]-x[p2])/BOX_SIDE +1;
 
 
-		   int lowx, highx, lowy, highy;
-		   if ( x[p1] <= x[p2]) {
-			   //from left to right - bottom
-			   lowx = x[p1]/BOX_SIDE;
-			   highx= x[p2]/BOX_SIDE;
-			   lowy = 0;
-			   highy = Math.max(y[p1]/BOX_SIDE,y[p2]/BOX_SIDE);
-		   }else{
-			   // from right to left - top side
-			   lowx = x[p2]/BOX_SIDE;
-			   highx= x[p1]/BOX_SIDE;
-			   lowy= Math.min(y[p1]/BOX_SIDE,y[p2]/BOX_SIDE);
-			   highy = NUM_Y_BOXES-1;
-		   }
+		int lowx, highx, lowy, highy;
+		if ( x[p1] <= x[p2]) {
+			//from left to right - bottom
+			lowx = x[p1]/BOX_SIDE;
+			highx= x[p2]/BOX_SIDE;
+			lowy = 0;
+			highy = Math.max(y[p1]/BOX_SIDE,y[p2]/BOX_SIDE);
+		}else{
+			// from right to left - top side
+			lowx = x[p2]/BOX_SIDE;
+			highx= x[p1]/BOX_SIDE;
+			lowy= Math.min(y[p1]/BOX_SIDE,y[p2]/BOX_SIDE);
+			highy = NUM_Y_BOXES-1;
+		}
 
 
-	   for ( int xx =lowx ; xx <= highx; xx++){
-			 // For every relevant y-box on these stripes
-			  for (int i= box[xx][lowy]; i < box[xx][highy+1]; i++){
+		for ( int xx =lowx ; xx <= highx; xx++){
+			// For every relevant y-box on these stripes
+			for (int i= box[xx][lowy]; i < box[xx][highy+1]; i++){
 
-				  if ( insideRect(p1,p2,i)) {
-					  // for all other points in this box
-					  d2 = a*x[i] +b*y[i] +c;
+				if ( insideRect(p1,p2,i)) {
+					// for all other points in this box
+					d2 = a*x[i] +b*y[i] +c;
 
-					  if (d2 <= 0) numNeg++;
-					  if (  d2 <= minD2 ){
-						  // found better  point i
-						  minP = i;
-						  minD2 = d2;
-					  } // end better point
+					if (d2 <= 0) numNeg++;
+					if (  d2 <= minD2 ){
+						// found better  point i
+						minP = i;
+						minD2 = d2;
+					} // end better point
 
-				  }// end test point 'i' in box(xx,yy)
-			  }// end open box(xx,yy)
-	   } // end x-stripe
+				}// end test point 'i' in box(xx,yy)
+			}// end open box(xx,yy)
+		} // end x-stripe
 
-	   if (numNeg > 0 ) {
-		  // found new point outside OR ON line p1-p2
+		if (numNeg > 0 ) {
+			// found new point outside OR ON line p1-p2
 
-		  theCoHull.putAfter(minP,p1);
-		  coHullMap.put(minP,minP);     // add to HashMap
-		  if ( numNeg > 1) {
-			 cohullRec (p1,minP);
-			 cohullRec(minP,p2);
-		 }
-	   }
+			theCoHull.putAfter(minP,p1);
+			coHullMap.put(minP,minP);     // add to HashMap
+			if ( numNeg > 1) {
+				cohullRec (p1,minP);
+				cohullRec(minP,p2);
+			}
+		}
 	}// end ------------cohullRec----------------------
 
 	//** returns true if point i ifinside rectangle defined by p1 and p2 */
@@ -450,10 +480,10 @@ class DelaunayAlg1 {
 		return xOK & yOK & (p1 !=i) & (p2!=i);
 	}// end inside p1p2Rectangle
 
-// ---------------------------------------- (end finding cohull) --------------
+	// ---------------------------------------- (end finding cohull) --------------
 
 
- // ---------------------------------(start findClosestNeighbourEdges)---------------------
+	// ---------------------------------(start findClosestNeighbourEdges)---------------------
 
 	double [] line2 (double [] line, double ax, double ay, double bx, double by) {
 		// returnes the line equation cx+dy+e =0: line[0]x+ line[1]y+ line[2]=0,
@@ -466,22 +496,22 @@ class DelaunayAlg1 {
 
 	// 2.jan 2015
 	int [] line (int [] line, int ax,int ay, int bx, int by) {
-			// returnes the line equation cx+dy+e=0 : line[0]x+ line[1]y+ line[2]=0,
-			// line from  a to b
-			line[0] = ay - by;
-			line[1] = bx - ax;
-			line[2] = by*ax-ay*bx;
-			return line;
+		// returnes the line equation cx+dy+e=0 : line[0]x+ line[1]y+ line[2]=0,
+		// line from  a to b
+		line[0] = ay - by;
+		line[1] = bx - ax;
+		line[2] = by*ax-ay*bx;
+		return line;
 	}// end line
 
 	// line from point a to point b
 	int [] line(int [] line, int a,int b) {
-			// returnes the line equation cx+dy+e=0 : line[0]x+ line[1]y+ line[2]=0,
-			// line from  pint a to b
-			line[0] = y[a] - y[b];
-			line[1] = x[b] - x[a];
-			line[2] = y[b]*x[a]-y[a]*x[b];
-			return line;
+		// returnes the line equation cx+dy+e=0 : line[0]x+ line[1]y+ line[2]=0,
+		// line from  pint a to b
+		line[0] = y[a] - y[b];
+		line[1] = x[b] - x[a];
+		line[2] = y[b]*x[a]-y[a]*x[b];
+		return line;
 	}// end line
 
 	int distToLine(int [] line, int point){
@@ -489,44 +519,44 @@ class DelaunayAlg1 {
 	} // end distToLine
 
 	double distToLine(int [] line, double xx, double yy){
-			return line[0] *xx +line[1]*yy + line[2];
+		return line[0] *xx +line[1]*yy + line[2];
 	} // end distToLine
 
 	double [] midNormal (int a, int b) {
-		 // returns the midnormal from line A - B on the form ret[0] + ret[1]y+ ret[1]
-		 double []ret = new double[3];
+		// returns the midnormal from line A - B on the form ret[0] + ret[1]y+ ret[1]
+		double []ret = new double[3];
 
-		 // (mx,my) midpoint an a-b,
-		 int mx = (x[a]+x[b])/2;  // OK, x and y are even numbers
-		 int my = (y[a]+y[b])/2;
-		 double p3x ,p3y = y[a];
-		 if ( x[b] == x[a]){ p3x = 2*mx;p3y=my;}  // nmidnorm is parallel with x-axis
-		 else if (y[b] == y[a]) {p3x =mx; p3y=2*my;} // midnorm parallel y-axis
-		 else p3x =(x[b]*x[b] - x[a]*x[a] + Math.pow(y[b] - y[a],2))/(2.0*(x[b]-x[a]));
-		 ret = line2 (ret,mx,my,p3x,p3y);
+		// (mx,my) midpoint an a-b,
+		int mx = (x[a]+x[b])/2;  // OK, x and y are even numbers
+		int my = (y[a]+y[b])/2;
+		double p3x ,p3y = y[a];
+		if ( x[b] == x[a]){ p3x = 2*mx;p3y=my;}  // nmidnorm is parallel with x-axis
+		else if (y[b] == y[a]) {p3x =mx; p3y=2*my;} // midnorm parallel y-axis
+		else p3x =(x[b]*x[b] - x[a]*x[a] + Math.pow(y[b] - y[a],2))/(2.0*(x[b]-x[a]));
+		ret = line2 (ret,mx,my,p3x,p3y);
 		return ret;
-	 }// end midNormal
+	}// end midNormal
 
-	 double [] midNormCrossing(double [] midAB, double [] midAC, double [] crossing){
-		 // returns the crossing, x=crossing[0], y = crossing [1] of two lines midAB and midAC)
-		 double div = midAC[0]*midAB[1]-midAB[0]*midAC[1];
-		 // if (Math.abs(div) < 0.00001) return false;  // Paralell lines will not accur
-		 crossing[0] = (midAC[1]*midAB[2]-midAC[2]*midAB[1])/div; // x-value
-		 crossing[1] = (midAC[2]*midAB[0]-midAC[0]*midAB[2])/div; // y -value
-		 return crossing;
-	 }// end midNormCrossing
+	double [] midNormCrossing(double [] midAB, double [] midAC, double [] crossing){
+		// returns the crossing, x=crossing[0], y = crossing [1] of two lines midAB and midAC)
+		double div = midAC[0]*midAB[1]-midAB[0]*midAC[1];
+		// if (Math.abs(div) < 0.00001) return false;  // Paralell lines will not accur
+		crossing[0] = (midAC[1]*midAB[2]-midAC[2]*midAB[1])/div; // x-value
+		crossing[1] = (midAC[2]*midAB[0]-midAC[0]*midAB[2])/div; // y -value
+		return crossing;
+	}// end midNormCrossing
 
-	  boolean cAbovepB (int c, int [] linepB) {
-		  // test which side of a line pB point c is (>0 to the left = 'above'
-		  return (linepB[0]*x[c] + linepB[1]*y[c] + linepB[2]) > 0;
-	  }// end findCfromBase
+	boolean cAbovepB (int c, int [] linepB) {
+		// test which side of a line pB point c is (>0 to the left = 'above'
+		return (linepB[0]*x[c] + linepB[1]*y[c] + linepB[2]) > 0;
+	}// end findCfromBase
 
 	long dist2 (int x, int y){
-	   return x*x+y*y;
+		return x*x+y*y;
 	} // end dist2 int
 
 	double dist2 (double x, double y){
-		   return x*x+y*y;
+		return x*x+y*y;
 	} // end dist2 double
 
 
@@ -537,37 +567,37 @@ class DelaunayAlg1 {
 
 
 	/******************************************************************
-	*	Alg 1: Finn først nærmeste nabo b for punkt a, så
+	*	Alg 1: Finn fï¿½rst nï¿½rmeste nabo b for punkt a, sï¿½
 	*           finn neste nabo C til A, dvs. trtekanten ABC ved:
-	*		1. Først først den C med minst (lavest, gjerne  neg verdi) på
-	*		   skjæring mellom midtnormalene AB og AC blant alle punkter
+	*		1. Fï¿½rst fï¿½rst den C med minst (lavest, gjerne  neg verdi) pï¿½
+	*		   skjï¿½ring mellom midtnormalene AB og AC blant alle punkter
 	*			inne i de bokser som dekker A og B.
-	*		2. Test så om funnet C er inne i sirkel som er inkludert i
-	*		   de boksene det er søkt i  og 'over' AB.
+	*		2. Test sï¿½ om funnet C er inne i sirkel som er inkludert i
+	*		   de boksene det er sï¿½kt i  og 'over' AB.
 	*		   a) Ok , C er funnet
-	*		   b) NEI, utvid søkebokser til de dekker Sirkel ABC
-	* 				og søk i resten av dem (etter evt bedre C)
+	*		   b) NEI, utvid sï¿½kebokser til de dekker Sirkel ABC
+	* 				og sï¿½k i resten av dem (etter evt bedre C)
 	********************************************************************/
 	int doAlg1Delaunay (NList chull) {
-	   int b,stop, num =0;
+		int b,stop, num =0;
 
-	   // a) first find all neighbours to cohull
-	   for (int i = 0; i <= chull.numElem-1; i++){
-		   if ( i == 0)  stop  =  chull.dtEdges[ chull.numElem -1]; else stop  = chull.dtEdges[i-1];
-		   if (i == chull.numElem-1) b = chull.dtEdges[0]; else b= chull.dtEdges[i+1];
-		   num += findRestOfNeighbours(chull.dtEdges[i], b, stop, allNB);
-	   }
+		// a) first find all neighbours to cohull
+		for (int i = 0; i <= chull.numElem-1; i++){
+			if ( i == 0)  stop  =  chull.dtEdges[ chull.numElem -1]; else stop  = chull.dtEdges[i-1];
+			if (i == chull.numElem-1) b = chull.dtEdges[0]; else b= chull.dtEdges[i+1];
+			num += findRestOfNeighbours(chull.dtEdges[i], b, stop, allNB);
+		}
 
-	   // b) then find first closest neighbour, and then
-	   //    rest of neighbours to all points a
-	   for (int a = 0; a < n; a++) {
-		  if ( !coHullMap.containsKey(a)) {
-			  b = closestNeigbourTo(a);
-			  allNB[0] = b;
-			  num += findRestOfNeighbours(a,b,b, allNB); // stop when finding b again
-		  }
-	   }
-	   return num;
+		// b) then find first closest neighbour, and then
+		//    rest of neighbours to all points a
+		for (int a = 0; a < n; a++) {
+			if ( !coHullMap.containsKey(a)) {
+				b = closestNeigbourTo(a);
+				allNB[0] = b;
+				num += findRestOfNeighbours(a,b,b, allNB); // stop when finding b again
+			}
+		}
+		return num;
 	}// end doAlg1Delaunay
 
 
@@ -582,23 +612,23 @@ class DelaunayAlg1 {
 
 		// find all neighbour  anti clockwise round a
 		do{
-		  b =c;
-		  allNB[numNB++] = c;
-		  c = findNextNeighbour (a,b);
+			b =c;
+			allNB[numNB++] = c;
+			c = findNextNeighbour (a,b);
 		} while (c != stop);
 
 		if (cohullCase ) { // cohull case
-		 numNB++;
+			numNB++;
 		}
 		// set in neighbourlist
 		int[] nbToA  = new int[numNB];
 
 		if (cohullCase ) { // cohull case
-		 allNB[numNB-1] = stop;
+			allNB[numNB-1] = stop;
 		}
 
 		for (int i = 0; i < numNB; i++){
-		   nbToA [i] = allNB[i];
+			nbToA [i] = allNB[i];
 		}
 		delEdges[a] = nbToA;
 		return numNB;
@@ -610,391 +640,391 @@ class DelaunayAlg1 {
 	//   - ie. next D-triangle abc
 	//***************************************************************
 	int findNextNeighbour(int a, int b) {
-	// println("fra pkt a:"  + a+ " til b:"+b);
-	   int c = -1; // not legal value
-	   double cr2 = 0;     // Dummy start , squared dist c to S
-	   int mx = (x[a]+x[b])/2, my = (y[a]+y[b])/2;
+		// println("fra pkt a:"  + a+ " til b:"+b);
+		int c = -1; // not legal value
+		double cr2 = 0;     // Dummy start , squared dist c to S
+		int mx = (x[a]+x[b])/2, my = (y[a]+y[b])/2;
 
-	   // find searccircle S center (sx,sy) along midtnormal a-b
-	   double dx = ((y[b] - y[a])*5.0)/17, dy = ((x[b]-x[a])*5.0)/17; // angle c appr = 60 deg.
-	   int []lineAB = new int[3];
-	   lineAB = line(lineAB,x[a],y[a],x[b],y[b]);
+		// find searccircle S center (sx,sy) along midtnormal a-b
+		double dx = ((y[b] - y[a])*5.0)/17, dy = ((x[b]-x[a])*5.0)/17; // angle c appr = 60 deg.
+		int []lineAB = new int[3];
+		lineAB = line(lineAB,x[a],y[a],x[b],y[b]);
 
-	    if (n < DebugLimit) println("\n*FindNextNeighbour, a:"+a+" b :"+b +", Equation:" +
-	        Format.align(lineAB[0],6)+"* x +"+Format.align(lineAB[1],6)+"* y +"+
-	         Format.align(lineAB[2],10));
+		if (n < DebugLimit) println("\n*FindNextNeighbour, a:"+a+" b :"+b +", Equation:" +
+		Format.align(lineAB[0],6)+"* x +"+Format.align(lineAB[1],6)+"* y +"+
+		Format.align(lineAB[2],10));
 
-	   // bestem midtnormal a-b
-	   double [] midNormAB = midNormal(a,b),
-				 midNormAP;
-	   double sx = mx, sy = my;
+		// bestem midtnormal a-b
+		double [] midNormAB = midNormal(a,b),
+		midNormAP;
+		double sx = mx, sy = my;
 
-	   // Central loop - loop until at least one potential c (p) is found - pick best
-	   do {
-		   sx = sx-dx;
-		   sy = sy+dy;
-		   double sr2 = dist2(x[a]-sx, y[a]-sy),  // squared radius for S
-		          sr  =  Math.sqrt(sr2);          //  radius for S
-		   int lowy = Math.max(0, (int)(sy-sr)/BOX_SIDE),
-		       highy= Math.min(NUM_Y_BOXES-1, (int)(sy+sr)/BOX_SIDE),
-		       lowx = Math.max(0, (int)(sx-sr)/BOX_SIDE),
-		       highx = Math.min(NUM_X_BOXES-1, (int)(sx+sr)/BOX_SIDE);
+		// Central loop - loop until at least one potential c (p) is found - pick best
+		do {
+			sx = sx-dx;
+			sy = sy+dy;
+			double sr2 = dist2(x[a]-sx, y[a]-sy),  // squared radius for S
+			sr  =  Math.sqrt(sr2);          //  radius for S
+			int lowy = Math.max(0, (int)(sy-sr)/BOX_SIDE),
+			highy= Math.min(NUM_Y_BOXES-1, (int)(sy+sr)/BOX_SIDE),
+			lowx = Math.max(0, (int)(sx-sr)/BOX_SIDE),
+			highx = Math.min(NUM_X_BOXES-1, (int)(sx+sr)/BOX_SIDE);
 
-		   double minDistToAB = 10000000.0;
-		   double []crossing = new double[2];
-		   int [] coCirc = new int[10];
-		   int coCircular =0;
+			double minDistToAB = 10000000.0;
+			double []crossing = new double[2];
+			int [] coCirc = new int[10];
+			int coCircular =0;
 
-		   // løp gjennom omådet og finn den beste c som
-		   for (int xx = lowx; xx <= highx; xx++) {
+			// lï¿½p gjennom omï¿½det og finn den beste c som
+			for (int xx = lowx; xx <= highx; xx++) {
 
-		   for (int p = box[xx][lowy]; p < box[xx][highy+1];  p++) {
-			   if (p != a && p!=b) {
-				   double radp2 = (x[p]-sx)*(x[p]-sx)+(y[p]-sy)*(y[p]-sy);
+				for (int p = box[xx][lowy]; p < box[xx][highy+1];  p++) {
+					if (p != a && p!=b) {
+						double radp2 = (x[p]-sx)*(x[p]-sx)+(y[p]-sy)*(y[p]-sy);
 
-				   if ( radp2 <= sr2 &&  cAbovepB(p, lineAB)) {
-						// point p within search circle &&  'above' line a-b
-						midNormAP = midNormal(a,p); // Find midnormal A-C
+						if ( radp2 <= sr2 &&  cAbovepB(p, lineAB)) {
+							// point p within search circle &&  'above' line a-b
+							midNormAP = midNormal(a,p); // Find midnormal A-C
 
-							 //println(" ------ C1, Fant brukbar p:"+p+", nåværende c:"+c);
+							//println(" ------ C1, Fant brukbar p:"+p+", nï¿½vï¿½rende c:"+c);
 
-						crossing = midNormCrossing (midNormAB,midNormAP,crossing);
-						// normal, all points above ab are not colinear points with ab
-						double dist = distToLine(lineAB, crossing[0], crossing[1]);
+							crossing = midNormCrossing (midNormAB,midNormAP,crossing);
+							// normal, all points above ab are not colinear points with ab
+							double dist = distToLine(lineAB, crossing[0], crossing[1]);
 
-						if (Math.abs(dist - minDistToAB) < EPSILON  && c != p){
-							  //  cocircular points c and p
-							  if(coCircular == 0) {
-								// must add a,b and best c found so far (for later calculations)
-								coCirc[coCircular++] = c;
-							  }
-							  coCirc [coCircular++] = p;
-						} else if ( dist < minDistToAB) {
-							  // found new better c
-							  c = p;
-							  minDistToAB = dist;
-							  coCircular = 0;
-						} // end not cocircular
-					 }// end usable point p
-				}// end p!= a,b
-			} // end new candidate point p for c in search circle
-		   } // end xx
+							if (Math.abs(dist - minDistToAB) < EPSILON  && c != p){
+								//  cocircular points c and p
+								if(coCircular == 0) {
+									// must add a,b and best c found so far (for later calculations)
+									coCirc[coCircular++] = c;
+								}
+								coCirc [coCircular++] = p;
+							} else if ( dist < minDistToAB) {
+								// found new better c
+								c = p;
+								minDistToAB = dist;
+								coCircular = 0;
+							} // end not cocircular
+						}// end usable point p
+					}// end p!= a,b
+				} // end new candidate point p for c in search circle
+			} // end xx
 
-		   // must find right CoCircular point if needed
+			// must find right CoCircular point if needed
 			if (coCircular > 0) {
-			  // must choose the same cocirc point as all orher a,b on that circle
-			  c = findCoCirc(a,b,coCircular, coCirc);
-			  numCoCircular++;
-			  coCircular = 0;
+				// must choose the same cocirc point as all orher a,b on that circle
+				c = findCoCirc(a,b,coCircular, coCirc);
+				numCoCircular++;
+				coCircular = 0;
 			}
-		   dx +=dx;
-		   dy+= dy;
-	   } while ( c < 0);
-	   return c;
+			dx +=dx;
+			dy+= dy;
+		} while ( c < 0);
+		return c;
 	}// end findNextNeighbour
 
 
-	   /** find c in coCircular case,
-	   //  Algorithm:
-	   // let c1 = closest point to origo, and if two points have
-	   //     same distance, the c1 = those of these two with smallest x-value
-	   // if (c1 != a && c != b) return c1 else
-	   //  if (c1 == a  ) take as c the next point  to left of a; else
-	   // if (c1 == b) take as c the nest point to the to right of b
-	   //    Sub-alg finding the one point p to the left of a (similar to the right of b):
-	   // try all lines a-p , p one of the other cocirc points nort a,b,
-	   // and the  p1 without without any point p =1 a,b above a-p1 is then c */
-	   //
-	   int findCoCirc(int a, int b,int coCircular, int []coCirc){
-		   long dMin2 = MAX_X*MAX_X, d2;
-		   int [] lineC1p=new int[3];
-		   int c1=-1,p,q, num=0, i,j;
+	/** find c in coCircular case,
+	//  Algorithm:
+	// let c1 = closest point to origo, and if two points have
+	//     same distance, the c1 = those of these two with smallest x-value
+	// if (c1 != a && c != b) return c1 else
+	//  if (c1 == a  ) take as c the next point  to left of a; else
+	// if (c1 == b) take as c the nest point to the to right of b
+	//    Sub-alg finding the one point p to the left of a (similar to the right of b):
+	// try all lines a-p , p one of the other cocirc points nort a,b,
+	// and the  p1 without without any point p =1 a,b above a-p1 is then c */
+	//
+	int findCoCirc(int a, int b,int coCircular, int []coCirc){
+		long dMin2 = MAX_X*MAX_X, d2;
+		int [] lineC1p=new int[3];
+		int c1=-1,p,q, num=0, i,j;
 
-		   // add a & b for first test
-		   coCirc[coCircular] =a;
-		   coCirc[coCircular+1] = b;
+		// add a & b for first test
+		coCirc[coCircular] =a;
+		coCirc[coCircular+1] = b;
 
-		   //find p closest to origo
-		   for ( i = 0; i < coCircular+2; i++) {
-			   p = coCirc[i];
-			   d2 = x[p]*x[p];
-			   if (c1 < 0 ||(d2 == dMin2 && y[p] < y[c1])|| d2 < dMin2){
-				   c1 = p; dMin2 =d2;
-			   }
-		   } // found candidate c1 closest to origo
+		//find p closest to origo
+		for ( i = 0; i < coCircular+2; i++) {
+			p = coCirc[i];
+			d2 = x[p]*x[p];
+			if (c1 < 0 ||(d2 == dMin2 && y[p] < y[c1])|| d2 < dMin2){
+				c1 = p; dMin2 =d2;
+			}
+		} // found candidate c1 closest to origo
 
-		   if (c1 == b) {
-				// find as c the next point to the left of a
-			    for ( i = 0; i < coCircular; i++) {
-					p = coCirc[i];
-					lineC1p = line(lineC1p,c1,p);
-					num=0;
-					for ( j = 0; j < coCircular; j++) {
-							q = coCirc[j];
-							if (p!=q){
-								if (  cAbovepB (q, lineC1p)) {
-								   break ;  // test next point i
-								}
-							} // test all points q != p
-					 } // end j, test all cocirc points q for above line: a-p
-        		    if (j == coCircular) {
-							// reached end of j-loop without fing a point above c1-p
-					        c1 = p; // p is our point because no points q above it
-					        break; // this i-loop is finished
+		if (c1 == b) {
+			// find as c the next point to the left of a
+			for ( i = 0; i < coCircular; i++) {
+				p = coCirc[i];
+				lineC1p = line(lineC1p,c1,p);
+				num=0;
+				for ( j = 0; j < coCircular; j++) {
+					q = coCirc[j];
+					if (p!=q){
+						if (  cAbovepB (q, lineC1p)) {
+							break ;  // test next point i
 						}
-			    } // end i
-			} else if ( c1== a ) {
-				// find as c the next point to the right of b
-				for ( i = 0; i < coCircular; i++) {
-					p = coCirc[i];
-					lineC1p = line(lineC1p,c1,p);
-						for ( j = 0; j < coCircular; j++) {
-							q = coCirc[j];
-							if (p!=q){
-								if ( ! cAbovepB (q, lineC1p)) {
-								   break ;  // test next point i
-							   } // end if
-						   }//  end test all points q != p
-						} // end j,  test all cocirc points  for above line: a-p
-						if (j == coCircular) {
-							c1 = p; // p is our point because no points q below it
-							break; // this i-loop is finished
-						}
-				 } // end i
-			 } // end if c1==a
-			 return c1; //
- 	   } // end findCoCirc
+					} // test all points q != p
+				} // end j, test all cocirc points q for above line: a-p
+				if (j == coCircular) {
+					// reached end of j-loop without fing a point above c1-p
+					c1 = p; // p is our point because no points q above it
+					break; // this i-loop is finished
+				}
+			} // end i
+		} else if ( c1== a ) {
+			// find as c the next point to the right of b
+			for ( i = 0; i < coCircular; i++) {
+				p = coCirc[i];
+				lineC1p = line(lineC1p,c1,p);
+				for ( j = 0; j < coCircular; j++) {
+					q = coCirc[j];
+					if (p!=q){
+						if ( ! cAbovepB (q, lineC1p)) {
+							break ;  // test next point i
+						} // end if
+					}//  end test all points q != p
+				} // end j,  test all cocirc points  for above line: a-p
+				if (j == coCircular) {
+					c1 = p; // p is our point because no points q below it
+					break; // this i-loop is finished
+				}
+			} // end i
+		} // end if c1==a
+		return c1; //
+	} // end findCoCirc
 
 
-        // Find point b closest to point p  because p-b is allways a Delaunay edge
-	   int closestNeigbourTo(int p){
-		   // start with point b =p-1 as a legal value
-		   int b= Math.min (p-1, n-1) ;
-		   if (b == 0) b=3;          // if p == 1
-		   int xp = x[p], yp =y[p];
-           int numBox =0;
+	// Find point b closest to point p  because p-b is allways a Delaunay edge
+	int closestNeigbourTo(int p){
+		// start with point b =p-1 as a legal value
+		int b= Math.min (p-1, n-1) ;
+		if (b == 0) b=3;          // if p == 1
+		int xp = x[p], yp =y[p];
+		int numBox =0;
 
-		   long sr2 = dist2(xp-x[b], yp-y[b]);  // squared radius for S
-		   double sr = Math.sqrt((double) sr2);
+		long sr2 = dist2(xp-x[b], yp-y[b]);  // squared radius for S
+		double sr = Math.sqrt((double) sr2);
 
-		   int lowy = Math.max(0, (int)(yp-sr)/BOX_SIDE),
-			   highy= Math.min(NUM_Y_BOXES-1, (int)(yp+sr)/BOX_SIDE),
-			   lowx = Math.max(0, (int)(xp-sr)/BOX_SIDE),
-		       highx = Math.min(NUM_X_BOXES-1, (int)(xp+sr)/BOX_SIDE);
+		int lowy = Math.max(0, (int)(yp-sr)/BOX_SIDE),
+		highy= Math.min(NUM_Y_BOXES-1, (int)(yp+sr)/BOX_SIDE),
+		lowx = Math.max(0, (int)(xp-sr)/BOX_SIDE),
+		highx = Math.min(NUM_X_BOXES-1, (int)(xp+sr)/BOX_SIDE);
 
-		   for (int xx = lowx; xx <= highx; xx++) {
-			   for (int j = box[xx][lowy]; j < box[xx][highy+1];j++) {
-				   if (j!= p && j != b){
-					   long d2 = dist2(x[j]-xp,y[j]-yp);
-					   if ( d2 < sr2) {
-						   b = j;
-						   sr2 = d2;
-					   }
-				   }// end p != j
-			   } // end j
-		   } // end i
-		   return b;
-	   } // end closestNeigbourTo
+		for (int xx = lowx; xx <= highx; xx++) {
+			for (int j = box[xx][lowy]; j < box[xx][highy+1];j++) {
+				if (j!= p && j != b){
+					long d2 = dist2(x[j]-xp,y[j]-yp);
+					if ( d2 < sr2) {
+						b = j;
+						sr2 = d2;
+					}
+				}// end p != j
+			} // end j
+		} // end i
+		return b;
+	} // end closestNeigbourTo
 
-// ----------------------------------(end findClosestNeighbourEdges)-----------
+	// ----------------------------------(end findClosestNeighbourEdges)-----------
 
-// ---------------------------(start NList = liste for cohull og coCircular)----
-	   class NList {
-		 static final int START_NUM_NEIGHBOURS = 7;
-		 int numElem =0;
-		 int p ;  // this list is owned by point p
-		 int [] dtEdges;
+	// ---------------------------(start NList = liste for cohull og coCircular)----
+	class NList {
+		static final int START_NUM_NEIGHBOURS = 7;
+		int numElem =0;
+		int p ;  // this list is owned by point p
+		int [] dtEdges;
 
-		 NList() {
-			 dtEdges = new int[START_NUM_NEIGHBOURS];
-		 }
+		NList() {
+			dtEdges = new int[START_NUM_NEIGHBOURS];
+		}
 
-		 void dump(String s) {
-			 println ("Dump av liste:"+s);
-			 for (int i=0;i < numElem; i++){
-			   int t = dtEdges[i];
-			  println(" Point t:"+t+" ("+x[t]+","+y[t]+")");
-			 }
-		 }// end dump
+		void dump(String s) {
+			println ("Dump av liste:"+s);
+			for (int i=0;i < numElem; i++){
+				int t = dtEdges[i];
+				println(" Point t:"+t+" ("+x[t]+","+y[t]+")");
+			}
+		}// end dump
 
-		 /** put newDE after suc */
+		/** put newDE after suc */
 
 
-		 void  putAfter(int newDE, int suc){
-			 if (numElem == dtEdges.length) {
-				 // expand dtEdges
-				 int[] b = new int [(int)(dtEdges.length *2)]; // double each iteration
-				 for (int i = 0; i < dtEdges.length; i++){
-					 b[i] = dtEdges[i];
-				 }
-				 dtEdges = b;
-			  } // end expand array
-			  // all cases:
-			  int i = numElem-1;
-			  // make room for new member
-			  while (i >=0 && dtEdges[i] != suc){
-				  dtEdges[i+1]= dtEdges[i];
-				  i--;
-			  }
-			  dtEdges[i+1] = newDE;
-			  numElem++;
-		 } // end put new Delaunay edge after 'suc'
+		void  putAfter(int newDE, int suc){
+			if (numElem == dtEdges.length) {
+				// expand dtEdges
+				int[] b = new int [(int)(dtEdges.length *2)]; // double each iteration
+				for (int i = 0; i < dtEdges.length; i++){
+					b[i] = dtEdges[i];
+				}
+				dtEdges = b;
+			} // end expand array
+			// all cases:
+			int i = numElem-1;
+			// make room for new member
+			while (i >=0 && dtEdges[i] != suc){
+				dtEdges[i+1]= dtEdges[i];
+				i--;
+			}
+			dtEdges[i+1] = newDE;
+			numElem++;
+		} // end put new Delaunay edge after 'suc'
 
 		/** put number of point p in in nList[i] at end - then  p-i is a Delaunay Edge */
 		void  put(int newDE){
-//			println(" * put nytt pkt:"+  newDE);
-			 if (numElem == dtEdges.length) {
-				 // expand dtEdges
-				 int[] b = new int [(int)(dtEdges.length *1.41)]; // double every second iteration
-				 for (int i = 0; i < dtEdges.length; i++){
-					 b[i] = dtEdges[i];
-				 }
-				 dtEdges = b;
-			  } // end expand array
-			  // all cases:
-			  dtEdges[numElem++] = newDE;
+			//			println(" * put nytt pkt:"+  newDE);
+			if (numElem == dtEdges.length) {
+				// expand dtEdges
+				int[] b = new int [(int)(dtEdges.length *1.41)]; // double every second iteration
+				for (int i = 0; i < dtEdges.length; i++){
+					b[i] = dtEdges[i];
+				}
+				dtEdges = b;
+			} // end expand array
+			// all cases:
+			dtEdges[numElem++] = newDE;
 
-	      //println(" --- put: nytt punkt nr. "+newDE+" inn i NList");
-		 } // end put new Delaunay edge
+			//println(" --- put: nytt punkt nr. "+newDE+" inn i NList");
+		} // end put new Delaunay edge
 
-		 void delete(int p) {};
+		void delete(int p) {};
 
-		 /** sortEdgesConterClockwise */
-	     void sortEdgesConterClockwise() {
-		 };
-	 }
+		/** sortEdgesConterClockwise */
+		void sortEdgesConterClockwise() {
+		};
+	}
 
-	 // --------------------------------end NList , start sorting--------------
-
-
-     /** SEKVENSIELL    insertsort (int[],int[])
-	  * Sort on a[low..high] and move y[low..high]  same way */
-     static void  insertSort(int [] a, int []y, int low, int high) {
-		     int i, t,ty;
-
-		      for (int k = low ; k < high; k++){
-		          t =  a[k+1];
-		          ty = y[k+1];
-		          i = k;
-
-		          while (i >= low && a[i] > t) {
-		             a[i+1] = a[i];
-		             y[i+1] = y[i];
-		             i--;
-		           }
-		          a[i+1] = t;
-		          y[i+1] = ty;
-		     }
-    } // end insertSort -int
+	// --------------------------------end NList , start sorting--------------
 
 
-     /** SEKVENSIELL    insertsort (double[],int[])
-	  * Sort on a[low..high] and move y[low..high]  same way */
-	  static void insertSort(double a[],int[] y,int low, int high) {
-	     int i, ty;
-	     double t;
+	/** SEKVENSIELL    insertsort (int[],int[])
+	* Sort on a[low..high] and move y[low..high]  same way */
+	static void  insertSort(int [] a, int []y, int low, int high) {
+		int i, t,ty;
 
-	      for (int k = low ; k < high; k++) {
-	          t =  a[k+1];
-	          ty = y[k+1];
-	          i = k;
+		for (int k = low ; k < high; k++){
+			t =  a[k+1];
+			ty = y[k+1];
+			i = k;
 
-	          while (i >= low && a[i] > t) {
-	             a[i+1] = a[i];
-	             y[i+1] = y[i];
-	             i--;
-	           }
-	          a[i+1] = t;
-	          y[i+1] = ty;
-	     } // end k
-	 }// end double,int insertSort
-
-    /** SEKVENSIELL    insertsort (long, int)
-	  * Sort on a[low..high] and move y[low..high]  same way */
-     static void  insertSort(long [] a, int []y, int low, int high) {
-		     int i,ty;
-		     long t;
-
-		     for (int k = low ; k < high; k++){
-		          t =  a[k+1];
-		          ty = y[k+1];
-		          i = k;
-
-		          while (i >= low && a[i] > t) {
-		             a[i+1] = a[i];
-		             y[i+1] = y[i];
-		             i--;
-		           }
-		          a[i+1] = t;
-		          y[i+1] = ty;
-		     }//end k
-
-    } // end insertSort -long
+			while (i >= low && a[i] > t) {
+				a[i+1] = a[i];
+				y[i+1] = y[i];
+				i--;
+			}
+			a[i+1] = t;
+			y[i+1] = ty;
+		}
+	} // end insertSort -int
 
 
-    /** SEKVENSIELL    R A D I X  ***********************
-     * Sort on a[low..high> and move y[low..high>  same way */
-	  static void radix2(int [] a, int []y, int low, int high) {
-	//	  println(" Sort radix2 with low:"+low+", high:"+high+ ", a.length:" + a.length);
-		  if (low < high) {
-			 if ( high - low < 100 ) {
-				 insertSort(a, y, low, high-1) ;
-		     } else {
+	/** SEKVENSIELL    insertsort (double[],int[])
+	* Sort on a[low..high] and move y[low..high]  same way */
+	static void insertSort(double a[],int[] y,int low, int high) {
+		int i, ty;
+		double t;
 
-				  // 2 digit radixSort on a[low..high>, let y do same moves
-				  int max = a[low], numBit = 2;
+		for (int k = low ; k < high; k++) {
+			t =  a[k+1];
+			ty = y[k+1];
+			i = k;
 
-				  for (int i = low+1 ; i < high ; i++)
-					   if (a[i] > max) max = a[i];
+			while (i >= low && a[i] > t) {
+				a[i+1] = a[i];
+				y[i+1] = y[i];
+				i--;
+			}
+			a[i+1] = t;
+			y[i+1] = ty;
+		} // end k
+	}// end double,int insertSort
 
-				  while (max >= (1<<numBit) )numBit++;
+	/** SEKVENSIELL    insertsort (long, int)
+	* Sort on a[low..high] and move y[low..high]  same way */
+	static void  insertSort(long [] a, int []y, int low, int high) {
+		int i,ty;
+		long t;
 
-				  int bit1 = numBit/2,
-					  bit2 = numBit-bit1;
+		for (int k = low ; k < high; k++){
+			t =  a[k+1];
+			ty = y[k+1];
+			i = k;
 
-				  int[] b = new int [high-low+1];
-				  int[] yb = new int[high-low+1];
+			while (i >= low && a[i] > t) {
+				a[i+1] = a[i];
+				y[i+1] = y[i];
+				i--;
+			}
+			a[i+1] = t;
+			y[i+1] = ty;
+		}//end k
 
-				  radixSort( a,b,low,high,y,yb,bit1, 0);
-				  radixSort( b,a,low,high,yb,y,bit2, bit1);
-			  } // end radix-sort
-		  } // end insertsort (or no sort)
-	  } // end radix2
+	} // end insertSort -long
 
-	 /** Sort a[] on one digit ; number of bits = maskLen, shiftet up
-		 ‘shift’ bits */
-	 static void radixSort ( int [] a, int [] b,int low, int high, int []y, int yb[], int maskLen, int shift){
-		  int  acumVal = 0, j, n = a.length;
-		  int mask = (1<<maskLen) -1;
 
-		  int [] count = new int [mask+1];
-		  int ind;
-		  // new variables because of no backcopy of b to a
-		  int alow;
-		  if (a.length > b.length) {
-			  // normal first  digit, soritng orig 'a' to shorter 'b'
-			  alow =0;
-		  }else {// second digit, soritng shorter 'b' to orig 'a'
-			  alow =low;
-		  }
+	/** SEKVENSIELL    R A D I X  ***********************
+	* Sort on a[low..high> and move y[low..high>  same way */
+	static void radix2(int [] a, int []y, int low, int high) {
+		//	  println(" Sort radix2 with low:"+low+", high:"+high+ ", a.length:" + a.length);
+		if (low < high) {
+			if ( high - low < 100 ) {
+				insertSort(a, y, low, high-1) ;
+			} else {
 
-		 // a) count=the frequency of each radix value in a
-		  for (int i = low; i < high; i++)
-			 count[(a[i-alow]>> shift) & mask]++;
+				// 2 digit radixSort on a[low..high>, let y do same moves
+				int max = a[low], numBit = 2;
 
-		 // b) Add up in 'count' - accumulated values
-		  for (int i = 0; i <= mask; i++) {
-			   j = count[i];
-				count[i] = acumVal;
-				acumVal += j;
-		  }
+				for (int i = low+1 ; i < high ; i++)
+				if (a[i] > max) max = a[i];
 
-		 // c) move numbers in sorted order a to b
-		  for (int i = low; i < high; i++) {
-			 ind =  count[(a[i-alow]>>shift) & mask]++;
-			 b[ind+alow]  = a[i-alow];
-			 yb[ind+alow] = y[i-alow];
-		  }// end move x (in a[]) and y
+				while (max >= (1<<numBit) )numBit++;
 
-    }// end Sekvensiell radixSort **************************************
+				int bit1 = numBit/2,
+				bit2 = numBit-bit1;
+
+				int[] b = new int [high-low+1];
+				int[] yb = new int[high-low+1];
+
+				radixSort( a,b,low,high,y,yb,bit1, 0);
+				radixSort( b,a,low,high,yb,y,bit2, bit1);
+			} // end radix-sort
+		} // end insertsort (or no sort)
+	} // end radix2
+
+	/** Sort a[] on one digit ; number of bits = maskLen, shiftet up
+	ï¿½shiftï¿½ bits */
+	static void radixSort ( int [] a, int [] b,int low, int high, int []y, int yb[], int maskLen, int shift){
+		int  acumVal = 0, j, n = a.length;
+		int mask = (1<<maskLen) -1;
+
+		int [] count = new int [mask+1];
+		int ind;
+		// new variables because of no backcopy of b to a
+		int alow;
+		if (a.length > b.length) {
+			// normal first  digit, soritng orig 'a' to shorter 'b'
+			alow =0;
+		}else {// second digit, soritng shorter 'b' to orig 'a'
+		alow =low;
+	}
+
+	// a) count=the frequency of each radix value in a
+	for (int i = low; i < high; i++)
+	count[(a[i-alow]>> shift) & mask]++;
+
+	// b) Add up in 'count' - accumulated values
+	for (int i = 0; i <= mask; i++) {
+		j = count[i];
+		count[i] = acumVal;
+		acumVal += j;
+	}
+
+	// c) move numbers in sorted order a to b
+	for (int i = low; i < high; i++) {
+		ind =  count[(a[i-alow]>>shift) & mask]++;
+		b[ind+alow]  = a[i-alow];
+		yb[ind+alow] = y[i-alow];
+	}// end move x (in a[]) and y
+
+}// end Sekvensiell radixSort **************************************
 }// end class Delaunay

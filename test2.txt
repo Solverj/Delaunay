@@ -1,0 +1,1013 @@
+** NUM_BOX:9,BOX_SIDE:5, MAX_X/Y:13, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (4,2) med DK til:
+ Point i:2 (2,4) med DK til:
+ Point i:3 (2,6) med DK til:
+ Point i:4 (4,6) med DK til:
+ Point i:5 (2,8) med DK til:
+ Point i:6 (4,8) med DK til:
+ Point i:7 (2,10) med DK til:
+ Point i:8 (4,10) med DK til:
+ Point i:9 (6,6) med DK til:
+ Point i:10 (6,8) med DK til:
+ Point i:11 (6,10) med DK til:
+ Point i:12 (8,10) med DK til:
+ Point i:13 (6,12) med DK til:
+ Point i:14 (8,12) med DK til:
+ Point i:15 (12,2) med DK til:
+ Point i:16 (12,4) med DK til:
+ Point i:17 (10,6) med DK til:
+ Point i:18 (10,10) med DK til:
+ Point i:19 (12,10) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:5, NUM_X_BOXES:3, MAX_X:13
+box[0][]:0,3,7,9,
+box[1][]:9,9,11,15,
+box[2][]:15,17,18,20,
+box[3][]:20,20,20,20,
+
+Tid: Initiate:    77.697 msek, dvs.    3.88483 msek. per punkt
+
+Tid: Cohull fant:11 punkter p� cohull. Tid:     0.174 msek, dvs.   0.008706 msek. per punkt
+
+*FindNextNeighbour, a:0 b :1, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:1 b :15, Equation:     0* x +     8* y +       -16
+
+*FindNextNeighbour, a:1 b :17, Equation:    -4* x +     6* y +         4
+
+*FindNextNeighbour, a:1 b :9, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:1 b :4, Equation:    -4* x +     0* y +        16
+
+*FindNextNeighbour, a:1 b :2, Equation:    -2* x +    -2* y +        12
+
+*FindNextNeighbour, a:15 b :16, Equation:    -2* x +     0* y +        24
+
+*FindNextNeighbour, a:15 b :17, Equation:    -4* x +    -2* y +        52
+
+*FindNextNeighbour, a:16 b :19, Equation:    -6* x +     0* y +        72
+
+*FindNextNeighbour, a:16 b :17, Equation:    -2* x +    -2* y +        32
+
+*FindNextNeighbour, a:19 b :14, Equation:    -2* x +    -4* y +        64
+
+*FindNextNeighbour, a:19 b :18, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:19 b :17, Equation:     4* x +    -2* y +       -28
+
+*FindNextNeighbour, a:14 b :13, Equation:     0* x +    -2* y +        24
+
+*FindNextNeighbour, a:14 b :11, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:14 b :12, Equation:     2* x +     0* y +       -16
+
+*FindNextNeighbour, a:14 b :18, Equation:     2* x +     2* y +       -40
+
+*FindNextNeighbour, a:13 b :7, Equation:     2* x +    -4* y +        36
+
+*FindNextNeighbour, a:13 b :8, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:13 b :11, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:7 b :5, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:7 b :8, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:5 b :3, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:5 b :6, Equation:     0* x +     2* y +       -16
+
+*FindNextNeighbour, a:5 b :8, Equation:    -2* x +     2* y +       -12
+
+*FindNextNeighbour, a:3 b :2, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +       -12
+
+*FindNextNeighbour, a:3 b :6, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:2 b :0, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     2* y +       -12
+
+*FindNextNeighbour, a:2 b :4, Equation:    -2* x +     2* y +        -4
+
+*FindNextNeighbour, a:4 b :3, Equation:     0* x +    -2* y +        12
+
+*FindNextNeighbour, a:4 b :2, Equation:     2* x +    -2* y +         4
+
+*FindNextNeighbour, a:4 b :1, Equation:     4* x +     0* y +       -16
+
+*FindNextNeighbour, a:4 b :9, Equation:     0* x +     2* y +       -12
+
+*FindNextNeighbour, a:4 b :10, Equation:    -2* x +     2* y +        -4
+
+*FindNextNeighbour, a:4 b :6, Equation:    -2* x +     0* y +         8
+
+*FindNextNeighbour, a:6 b :5, Equation:     0* x +    -2* y +        16
+
+*FindNextNeighbour, a:6 b :3, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:6 b :4, Equation:     2* x +     0* y +        -8
+
+*FindNextNeighbour, a:6 b :10, Equation:     0* x +     2* y +       -16
+
+*FindNextNeighbour, a:6 b :11, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:6 b :8, Equation:    -2* x +     0* y +         8
+
+*FindNextNeighbour, a:8 b :7, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:8 b :6, Equation:     2* x +     0* y +        -8
+
+*FindNextNeighbour, a:8 b :11, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:8 b :13, Equation:    -2* x +     2* y +       -12
+
+*FindNextNeighbour, a:9 b :4, Equation:     0* x +    -2* y +        12
+
+*FindNextNeighbour, a:9 b :1, Equation:     4* x +    -2* y +       -12
+
+*FindNextNeighbour, a:9 b :17, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:9 b :10, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:10 b :9, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:10 b :17, Equation:     2* x +     4* y +       -44
+
+*FindNextNeighbour, a:10 b :12, Equation:    -2* x +     2* y +        -4
+
+*FindNextNeighbour, a:10 b :11, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:10 b :6, Equation:     0* x +    -2* y +        16
+
+*FindNextNeighbour, a:10 b :4, Equation:     2* x +    -2* y +         4
+
+*FindNextNeighbour, a:11 b :10, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:11 b :12, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:11 b :14, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:11 b :13, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:11 b :8, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:11 b :6, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:12 b :11, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:12 b :10, Equation:     2* x +    -2* y +         4
+
+*FindNextNeighbour, a:12 b :17, Equation:     4* x +     2* y +       -52
+
+*FindNextNeighbour, a:12 b :18, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:12 b :14, Equation:    -2* x +     0* y +        16
+
+*FindNextNeighbour, a:17 b :16, Equation:     2* x +     2* y +       -32
+
+*FindNextNeighbour, a:17 b :19, Equation:    -4* x +     2* y +        28
+
+*FindNextNeighbour, a:17 b :18, Equation:    -4* x +     0* y +        40
+
+*FindNextNeighbour, a:17 b :12, Equation:    -4* x +    -2* y +        52
+
+*FindNextNeighbour, a:17 b :10, Equation:    -2* x +    -4* y +        44
+
+*FindNextNeighbour, a:17 b :9, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:17 b :1, Equation:     4* x +    -6* y +        -4
+
+*FindNextNeighbour, a:17 b :15, Equation:     4* x +     2* y +       -52
+
+*FindNextNeighbour, a:18 b :12, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:18 b :17, Equation:     4* x +     0* y +       -40
+
+*FindNextNeighbour, a:18 b :19, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:18 b :14, Equation:    -2* x +    -2* y +        40
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:1,2
+ Point i:1 (4,2) med DK til:15,17,9,4,2,0
+ Point i:2 (2,4) med DK til:0,1,4,3
+ Point i:3 (2,6) med DK til:2,4,6,5
+ Point i:4 (4,6) med DK til:3,2,1,9,10,6
+ Point i:5 (2,8) med DK til:3,6,8,7
+ Point i:6 (4,8) med DK til:5,3,4,10,11,8
+ Point i:7 (2,10) med DK til:5,8,13
+ Point i:8 (4,10) med DK til:7,5,6,11,13
+ Point i:9 (6,6) med DK til:4,1,17,10
+ Point i:10 (6,8) med DK til:9,17,12,11,6,4
+ Point i:11 (6,10) med DK til:10,12,14,13,8,6
+ Point i:12 (8,10) med DK til:11,10,17,18,14
+ Point i:13 (6,12) med DK til:7,8,11,14
+ Point i:14 (8,12) med DK til:13,11,12,18,19
+ Point i:15 (12,2) med DK til:16,17,1
+ Point i:16 (12,4) med DK til:19,17,15
+ Point i:17 (10,6) med DK til:16,19,18,12,10,9,1,15
+ Point i:18 (10,10) med DK til:12,17,19,14
+ Point i:19 (12,10) med DK til:14,18,17,16
+Number of not matching Delaunay neghbours:0
+Ant pkt:20, antIndrePkt:9, totAntKanter:46, totAntTriangler:27
+
+DT-kanter funnet:46 unike med 3 gj.snitt punkter per box p�     92.824msek , 
+dvs.   4.6412 millisek. per punkt, og:   4.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:17
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      6.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:1,2
+ Point i:1 (4,2) med DK til:15,17,9,4,2,0
+ Point i:2 (2,4) med DK til:0,1,4,3
+ Point i:3 (2,6) med DK til:2,4,6,5
+ Point i:4 (4,6) med DK til:3,2,1,9,10,6
+ Point i:5 (2,8) med DK til:3,6,8,7
+ Point i:6 (4,8) med DK til:5,3,4,10,11,8
+ Point i:7 (2,10) med DK til:5,8,13
+ Point i:8 (4,10) med DK til:7,5,6,11,13
+ Point i:9 (6,6) med DK til:4,1,17,10
+ Point i:10 (6,8) med DK til:9,17,12,11,6,4
+ Point i:11 (6,10) med DK til:10,12,14,13,8,6
+ Point i:12 (8,10) med DK til:11,10,17,18,14
+ Point i:13 (6,12) med DK til:7,8,11,14
+ Point i:14 (8,12) med DK til:13,11,12,18,19
+ Point i:15 (12,2) med DK til:16,17,1
+ Point i:16 (12,4) med DK til:19,17,15
+ Point i:17 (10,6) med DK til:16,19,18,12,10,9,1,15
+ Point i:18 (10,10) med DK til:12,17,19,14
+ Point i:19 (12,10) med DK til:14,18,17,16
+** NUM_BOX:9,BOX_SIDE:8, MAX_X/Y:22, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (6,2) med DK til:
+ Point i:2 (4,6) med DK til:
+ Point i:3 (2,8) med DK til:
+ Point i:4 (2,10) med DK til:
+ Point i:5 (4,10) med DK til:
+ Point i:6 (6,10) med DK til:
+ Point i:7 (2,12) med DK til:
+ Point i:8 (6,12) med DK til:
+ Point i:9 (2,14) med DK til:
+ Point i:10 (4,14) med DK til:
+ Point i:11 (6,14) med DK til:
+ Point i:12 (4,16) med DK til:
+ Point i:13 (6,16) med DK til:
+ Point i:14 (6,18) med DK til:
+ Point i:15 (4,20) med DK til:
+ Point i:16 (8,2) med DK til:
+ Point i:17 (14,2) med DK til:
+ Point i:18 (8,4) med DK til:
+ Point i:19 (12,4) med DK til:
+ Point i:20 (10,6) med DK til:
+ Point i:21 (12,8) med DK til:
+ Point i:22 (14,8) med DK til:
+ Point i:23 (8,10) med DK til:
+ Point i:24 (12,10) med DK til:
+ Point i:25 (14,10) med DK til:
+ Point i:26 (8,12) med DK til:
+ Point i:27 (10,12) med DK til:
+ Point i:28 (12,12) med DK til:
+ Point i:29 (10,14) med DK til:
+ Point i:30 (12,14) med DK til:
+ Point i:31 (10,16) med DK til:
+ Point i:32 (12,16) med DK til:
+ Point i:33 (14,18) med DK til:
+ Point i:34 (12,20) med DK til:
+ Point i:35 (14,20) med DK til:
+ Point i:36 (16,2) med DK til:
+ Point i:37 (18,2) med DK til:
+ Point i:38 (20,2) med DK til:
+ Point i:39 (20,4) med DK til:
+ Point i:40 (18,6) med DK til:
+ Point i:41 (18,8) med DK til:
+ Point i:42 (20,8) med DK til:
+ Point i:43 (16,14) med DK til:
+ Point i:44 (20,14) med DK til:
+ Point i:45 (16,16) med DK til:
+ Point i:46 (18,16) med DK til:
+ Point i:47 (16,18) med DK til:
+ Point i:48 (16,20) med DK til:
+ Point i:49 (18,20) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:8, NUM_X_BOXES:3, MAX_X:22
+box[0][]:0,3,12,16,
+box[1][]:16,21,31,36,
+box[2][]:36,41,45,50,
+box[3][]:50,50,50,50,
+
+Tid: Initiate:   130.857 msek, dvs.    2.61714 msek. per punkt
+
+Tid: Cohull fant:19 punkter p� cohull. Tid:     0.216 msek, dvs.   0.004328 msek. per punkt
+
+*FindNextNeighbour, a:0 b :1, Equation:     0* x +     4* y +        -8
+
+*FindNextNeighbour, a:0 b :2, Equation:    -4* x +     2* y +         4
+
+*FindNextNeighbour, a:1 b :16, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:1 b :18, Equation:    -2* x +     2* y +         8
+
+*FindNextNeighbour, a:1 b :2, Equation:    -4* x +    -2* y +        28
+
+*FindNextNeighbour, a:16 b :17, Equation:     0* x +     6* y +       -12
+
+*FindNextNeighbour, a:16 b :19, Equation:    -2* x +     4* y +         8
+
+*FindNextNeighbour, a:16 b :18, Equation:    -2* x +     0* y +        16
+
+*FindNextNeighbour, a:17 b :36, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:17 b :19, Equation:    -2* x +    -2* y +        32
+
+*FindNextNeighbour, a:36 b :37, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:36 b :40, Equation:    -4* x +     2* y +        60
+
+*FindNextNeighbour, a:36 b :19, Equation:    -2* x +    -4* y +        40
+
+*FindNextNeighbour, a:37 b :38, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:37 b :39, Equation:    -2* x +     2* y +        32
+
+*FindNextNeighbour, a:37 b :40, Equation:    -4* x +     0* y +        72
+
+*FindNextNeighbour, a:38 b :39, Equation:    -2* x +     0* y +        40
+
+*FindNextNeighbour, a:39 b :42, Equation:    -4* x +     0* y +        80
+
+*FindNextNeighbour, a:39 b :40, Equation:    -2* x +    -2* y +        48
+
+*FindNextNeighbour, a:39 b :37, Equation:     2* x +    -2* y +       -32
+
+*FindNextNeighbour, a:42 b :44, Equation:    -6* x +     0* y +       120
+
+*FindNextNeighbour, a:42 b :41, Equation:     0* x +    -2* y +        16
+
+*FindNextNeighbour, a:42 b :40, Equation:     2* x +    -2* y +       -24
+
+*FindNextNeighbour, a:44 b :49, Equation:    -6* x +    -2* y +       148
+
+*FindNextNeighbour, a:44 b :46, Equation:    -2* x +    -2* y +        68
+
+*FindNextNeighbour, a:44 b :43, Equation:     0* x +    -4* y +        56
+
+*FindNextNeighbour, a:44 b :41, Equation:     6* x +    -2* y +       -92
+
+*FindNextNeighbour, a:49 b :48, Equation:     0* x +    -2* y +        40
+
+*FindNextNeighbour, a:49 b :47, Equation:     2* x +    -2* y +         4
+
+*FindNextNeighbour, a:49 b :46, Equation:     4* x +     0* y +       -72
+
+*FindNextNeighbour, a:48 b :35, Equation:     0* x +    -2* y +        40
+
+*FindNextNeighbour, a:48 b :33, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:48 b :47, Equation:     2* x +     0* y +       -32
+
+*FindNextNeighbour, a:35 b :34, Equation:     0* x +    -2* y +        40
+
+*FindNextNeighbour, a:35 b :33, Equation:     2* x +     0* y +       -28
+
+*FindNextNeighbour, a:34 b :15, Equation:     0* x +    -8* y +       160
+
+*FindNextNeighbour, a:34 b :14, Equation:     2* x +    -6* y +        96
+
+*FindNextNeighbour, a:34 b :31, Equation:     4* x +    -2* y +        -8
+
+*FindNextNeighbour, a:34 b :32, Equation:     4* x +     0* y +       -48
+
+*FindNextNeighbour, a:34 b :33, Equation:     2* x +     2* y +       -64
+
+*FindNextNeighbour, a:15 b :9, Equation:     6* x +    -2* y +        16
+
+*FindNextNeighbour, a:15 b :12, Equation:     4* x +     0* y +       -16
+
+*FindNextNeighbour, a:15 b :14, Equation:     2* x +     2* y +       -48
+
+*FindNextNeighbour, a:9 b :7, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:9 b :10, Equation:     0* x +     2* y +       -28
+
+*FindNextNeighbour, a:9 b :12, Equation:    -2* x +     2* y +       -24
+
+*FindNextNeighbour, a:7 b :4, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:7 b :5, Equation:     2* x +     2* y +       -28
+
+*FindNextNeighbour, a:7 b :8, Equation:     0* x +     4* y +       -48
+
+*FindNextNeighbour, a:7 b :10, Equation:    -2* x +     2* y +       -20
+
+*FindNextNeighbour, a:4 b :3, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:4 b :5, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:3 b :0, Equation:     6* x +     0* y +       -12
+
+*FindNextNeighbour, a:3 b :2, Equation:     2* x +     2* y +       -20
+
+*FindNextNeighbour, a:3 b :5, Equation:    -2* x +     2* y +       -12
+
+*FindNextNeighbour, a:2 b :3, Equation:    -2* x +    -2* y +        20
+
+*FindNextNeighbour, a:2 b :0, Equation:     4* x +    -2* y +        -4
+
+*FindNextNeighbour, a:2 b :1, Equation:     4* x +     2* y +       -28
+
+*FindNextNeighbour, a:2 b :18, Equation:     2* x +     4* y +       -32
+
+*FindNextNeighbour, a:2 b :20, Equation:     0* x +     6* y +       -36
+
+*FindNextNeighbour, a:2 b :23, Equation:    -4* x +     4* y +        -8
+
+*FindNextNeighbour, a:2 b :6, Equation:    -4* x +     2* y +         4
+
+*FindNextNeighbour, a:2 b :5, Equation:    -4* x +     0* y +        16
+
+*FindNextNeighbour, a:5 b :4, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:5 b :3, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:5 b :2, Equation:     4* x +     0* y +       -16
+
+*FindNextNeighbour, a:5 b :6, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:5 b :8, Equation:    -2* x +     2* y +       -12
+
+*FindNextNeighbour, a:5 b :7, Equation:    -2* x +    -2* y +        28
+
+*FindNextNeighbour, a:6 b :5, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:6 b :2, Equation:     4* x +    -2* y +        -4
+
+*FindNextNeighbour, a:6 b :23, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:6 b :26, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:6 b :8, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:8 b :6, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:8 b :26, Equation:     0* x +     2* y +       -24
+
+*FindNextNeighbour, a:8 b :11, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:8 b :10, Equation:    -2* x +    -2* y +        36
+
+*FindNextNeighbour, a:8 b :7, Equation:     0* x +    -4* y +        48
+
+*FindNextNeighbour, a:8 b :5, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:10 b :9, Equation:     0* x +    -2* y +        28
+
+*FindNextNeighbour, a:10 b :7, Equation:     2* x +    -2* y +        20
+
+*FindNextNeighbour, a:10 b :8, Equation:     2* x +     2* y +       -36
+
+*FindNextNeighbour, a:10 b :11, Equation:     0* x +     2* y +       -28
+
+*FindNextNeighbour, a:10 b :13, Equation:    -2* x +     2* y +       -20
+
+*FindNextNeighbour, a:10 b :12, Equation:    -2* x +     0* y +         8
+
+*FindNextNeighbour, a:11 b :10, Equation:     0* x +    -2* y +        28
+
+*FindNextNeighbour, a:11 b :8, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:11 b :26, Equation:     2* x +     2* y +       -40
+
+*FindNextNeighbour, a:11 b :29, Equation:     0* x +     4* y +       -56
+
+*FindNextNeighbour, a:11 b :31, Equation:    -2* x +     4* y +       -44
+
+*FindNextNeighbour, a:11 b :13, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:12 b :10, Equation:     2* x +     0* y +        -8
+
+*FindNextNeighbour, a:12 b :13, Equation:     0* x +     2* y +       -32
+
+*FindNextNeighbour, a:12 b :14, Equation:    -2* x +     2* y +       -24
+
+*FindNextNeighbour, a:12 b :15, Equation:    -4* x +     0* y +        16
+
+*FindNextNeighbour, a:12 b :9, Equation:     2* x +    -2* y +        24
+
+*FindNextNeighbour, a:13 b :12, Equation:     0* x +    -2* y +        32
+
+*FindNextNeighbour, a:13 b :10, Equation:     2* x +    -2* y +        20
+
+*FindNextNeighbour, a:13 b :11, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:13 b :31, Equation:     0* x +     4* y +       -64
+
+*FindNextNeighbour, a:13 b :14, Equation:    -2* x +     0* y +        12
+
+*FindNextNeighbour, a:14 b :13, Equation:     2* x +     0* y +       -12
+
+*FindNextNeighbour, a:14 b :31, Equation:     2* x +     4* y +       -84
+
+*FindNextNeighbour, a:14 b :34, Equation:    -2* x +     6* y +       -96
+
+*FindNextNeighbour, a:14 b :15, Equation:    -2* x +    -2* y +        48
+
+*FindNextNeighbour, a:14 b :12, Equation:     2* x +    -2* y +        24
+
+*FindNextNeighbour, a:18 b :16, Equation:     2* x +     0* y +       -16
+
+*FindNextNeighbour, a:18 b :19, Equation:     0* x +     4* y +       -16
+
+*FindNextNeighbour, a:18 b :20, Equation:    -2* x +     2* y +         8
+
+*FindNextNeighbour, a:18 b :2, Equation:    -2* x +    -4* y +        32
+
+*FindNextNeighbour, a:18 b :1, Equation:     2* x +    -2* y +        -8
+
+*FindNextNeighbour, a:19 b :17, Equation:     2* x +     2* y +       -32
+
+*FindNextNeighbour, a:19 b :36, Equation:     2* x +     4* y +       -40
+
+*FindNextNeighbour, a:19 b :40, Equation:    -2* x +     6* y +         0
+
+*FindNextNeighbour, a:19 b :22, Equation:    -4* x +     2* y +        40
+
+*FindNextNeighbour, a:19 b :21, Equation:    -4* x +     0* y +        48
+
+*FindNextNeighbour, a:19 b :20, Equation:    -2* x +    -2* y +        32
+
+*FindNextNeighbour, a:19 b :18, Equation:     0* x +    -4* y +        16
+
+*FindNextNeighbour, a:19 b :16, Equation:     2* x +    -4* y +        -8
+
+*FindNextNeighbour, a:20 b :19, Equation:     2* x +     2* y +       -32
+
+*FindNextNeighbour, a:20 b :21, Equation:    -2* x +     2* y +         8
+
+*FindNextNeighbour, a:20 b :23, Equation:    -4* x +    -2* y +        52
+
+*FindNextNeighbour, a:20 b :2, Equation:     0* x +    -6* y +        36
+
+*FindNextNeighbour, a:20 b :18, Equation:     2* x +    -2* y +        -8
+
+*FindNextNeighbour, a:21 b :22, Equation:     0* x +     2* y +       -16
+
+*FindNextNeighbour, a:21 b :25, Equation:    -2* x +     2* y +         8
+
+*FindNextNeighbour, a:21 b :24, Equation:    -2* x +     0* y +        24
+
+*FindNextNeighbour, a:21 b :23, Equation:    -2* x +    -4* y +        56
+
+*FindNextNeighbour, a:21 b :20, Equation:     2* x +    -2* y +        -8
+
+*FindNextNeighbour, a:21 b :19, Equation:     4* x +     0* y +       -48
+
+*FindNextNeighbour, a:22 b :21, Equation:     0* x +    -2* y +        16
+
+*FindNextNeighbour, a:22 b :19, Equation:     4* x +    -2* y +       -40
+
+*FindNextNeighbour, a:22 b :40, Equation:     2* x +     4* y +       -60
+
+*FindNextNeighbour, a:22 b :41, Equation:     0* x +     4* y +       -32
+
+*FindNextNeighbour, a:22 b :25, Equation:    -2* x +     0* y +        28
+
+*FindNextNeighbour, a:23 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:23 b :2, Equation:     4* x +    -4* y +         8
+
+*FindNextNeighbour, a:23 b :20, Equation:     4* x +     2* y +       -52
+
+*FindNextNeighbour, a:23 b :21, Equation:     2* x +     4* y +       -56
+
+*FindNextNeighbour, a:23 b :24, Equation:     0* x +     4* y +       -40
+
+*FindNextNeighbour, a:23 b :27, Equation:    -2* x +     2* y +        -4
+
+*FindNextNeighbour, a:23 b :26, Equation:    -2* x +     0* y +        16
+
+*FindNextNeighbour, a:24 b :21, Equation:     2* x +     0* y +       -24
+
+*FindNextNeighbour, a:24 b :25, Equation:     0* x +     2* y +       -20
+
+*FindNextNeighbour, a:24 b :28, Equation:    -2* x +     0* y +        24
+
+*FindNextNeighbour, a:24 b :27, Equation:    -2* x +    -2* y +        44
+
+*FindNextNeighbour, a:24 b :23, Equation:     0* x +    -4* y +        40
+
+*FindNextNeighbour, a:25 b :24, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:25 b :21, Equation:     2* x +    -2* y +        -8
+
+*FindNextNeighbour, a:25 b :22, Equation:     2* x +     0* y +       -28
+
+*FindNextNeighbour, a:25 b :41, Equation:     2* x +     4* y +       -68
+
+*FindNextNeighbour, a:25 b :43, Equation:    -4* x +     2* y +        36
+
+*FindNextNeighbour, a:25 b :28, Equation:    -2* x +    -2* y +        48
+
+*FindNextNeighbour, a:26 b :8, Equation:     0* x +    -2* y +        24
+
+*FindNextNeighbour, a:26 b :6, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:26 b :23, Equation:     2* x +     0* y +       -16
+
+*FindNextNeighbour, a:26 b :27, Equation:     0* x +     2* y +       -24
+
+*FindNextNeighbour, a:26 b :29, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:26 b :11, Equation:    -2* x +    -2* y +        40
+
+*FindNextNeighbour, a:27 b :26, Equation:     0* x +    -2* y +        24
+
+*FindNextNeighbour, a:27 b :23, Equation:     2* x +    -2* y +         4
+
+*FindNextNeighbour, a:27 b :24, Equation:     2* x +     2* y +       -44
+
+*FindNextNeighbour, a:27 b :28, Equation:     0* x +     2* y +       -24
+
+*FindNextNeighbour, a:27 b :30, Equation:    -2* x +     2* y +        -4
+
+*FindNextNeighbour, a:27 b :29, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:28 b :27, Equation:     0* x +    -2* y +        24
+
+*FindNextNeighbour, a:28 b :24, Equation:     2* x +     0* y +       -24
+
+*FindNextNeighbour, a:28 b :25, Equation:     2* x +     2* y +       -48
+
+*FindNextNeighbour, a:28 b :43, Equation:    -2* x +     4* y +       -24
+
+*FindNextNeighbour, a:28 b :30, Equation:    -2* x +     0* y +        24
+
+*FindNextNeighbour, a:29 b :27, Equation:     2* x +     0* y +       -20
+
+*FindNextNeighbour, a:29 b :30, Equation:     0* x +     2* y +       -28
+
+*FindNextNeighbour, a:29 b :32, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:29 b :31, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:29 b :11, Equation:     0* x +    -4* y +        56
+
+*FindNextNeighbour, a:29 b :26, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:30 b :29, Equation:     0* x +    -2* y +        28
+
+*FindNextNeighbour, a:30 b :27, Equation:     2* x +    -2* y +         4
+
+*FindNextNeighbour, a:30 b :28, Equation:     2* x +     0* y +       -24
+
+*FindNextNeighbour, a:30 b :43, Equation:     0* x +     4* y +       -56
+
+*FindNextNeighbour, a:30 b :45, Equation:    -2* x +     4* y +       -32
+
+*FindNextNeighbour, a:30 b :32, Equation:    -2* x +     0* y +        24
+
+*FindNextNeighbour, a:31 b :29, Equation:     2* x +     0* y +       -20
+
+*FindNextNeighbour, a:31 b :32, Equation:     0* x +     2* y +       -32
+
+*FindNextNeighbour, a:31 b :34, Equation:    -4* x +     2* y +         8
+
+*FindNextNeighbour, a:31 b :14, Equation:    -2* x +    -4* y +        84
+
+*FindNextNeighbour, a:31 b :13, Equation:     0* x +    -4* y +        64
+
+*FindNextNeighbour, a:31 b :11, Equation:     2* x +    -4* y +        44
+
+*FindNextNeighbour, a:32 b :31, Equation:     0* x +    -2* y +        32
+
+*FindNextNeighbour, a:32 b :29, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:32 b :30, Equation:     2* x +     0* y +       -24
+
+*FindNextNeighbour, a:32 b :45, Equation:     0* x +     4* y +       -64
+
+*FindNextNeighbour, a:32 b :33, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:32 b :34, Equation:    -4* x +     0* y +        48
+
+*FindNextNeighbour, a:33 b :35, Equation:    -2* x +     0* y +        28
+
+*FindNextNeighbour, a:33 b :34, Equation:    -2* x +    -2* y +        64
+
+*FindNextNeighbour, a:33 b :32, Equation:     2* x +    -2* y +         8
+
+*FindNextNeighbour, a:33 b :45, Equation:     2* x +     2* y +       -64
+
+*FindNextNeighbour, a:33 b :47, Equation:     0* x +     2* y +       -36
+
+*FindNextNeighbour, a:33 b :48, Equation:    -2* x +     2* y +        -8
+
+*FindNextNeighbour, a:40 b :41, Equation:    -2* x +     0* y +        36
+
+*FindNextNeighbour, a:40 b :22, Equation:    -2* x +    -4* y +        60
+
+*FindNextNeighbour, a:40 b :19, Equation:     2* x +    -6* y +         0
+
+*FindNextNeighbour, a:40 b :36, Equation:     4* x +    -2* y +       -60
+
+*FindNextNeighbour, a:40 b :37, Equation:     4* x +     0* y +       -72
+
+*FindNextNeighbour, a:40 b :39, Equation:     2* x +     2* y +       -48
+
+*FindNextNeighbour, a:40 b :42, Equation:    -2* x +     2* y +        24
+
+*FindNextNeighbour, a:41 b :40, Equation:     2* x +     0* y +       -36
+
+*FindNextNeighbour, a:41 b :42, Equation:     0* x +     2* y +       -16
+
+*FindNextNeighbour, a:41 b :44, Equation:    -6* x +     2* y +        92
+
+*FindNextNeighbour, a:41 b :43, Equation:    -6* x +    -2* y +       124
+
+*FindNextNeighbour, a:41 b :25, Equation:    -2* x +    -4* y +        68
+
+*FindNextNeighbour, a:41 b :22, Equation:     0* x +    -4* y +        32
+
+*FindNextNeighbour, a:43 b :45, Equation:    -2* x +     0* y +        32
+
+*FindNextNeighbour, a:43 b :30, Equation:     0* x +    -4* y +        56
+
+*FindNextNeighbour, a:43 b :28, Equation:     2* x +    -4* y +        24
+
+*FindNextNeighbour, a:43 b :25, Equation:     4* x +    -2* y +       -36
+
+*FindNextNeighbour, a:43 b :41, Equation:     6* x +     2* y +      -124
+
+*FindNextNeighbour, a:43 b :44, Equation:     0* x +     4* y +       -56
+
+*FindNextNeighbour, a:43 b :46, Equation:    -2* x +     2* y +         4
+
+*FindNextNeighbour, a:45 b :43, Equation:     2* x +     0* y +       -32
+
+*FindNextNeighbour, a:45 b :46, Equation:     0* x +     2* y +       -32
+
+*FindNextNeighbour, a:45 b :47, Equation:    -2* x +     0* y +        32
+
+*FindNextNeighbour, a:45 b :33, Equation:    -2* x +    -2* y +        64
+
+*FindNextNeighbour, a:45 b :32, Equation:     0* x +    -4* y +        64
+
+*FindNextNeighbour, a:45 b :30, Equation:     2* x +    -4* y +        32
+
+*FindNextNeighbour, a:46 b :45, Equation:     0* x +    -2* y +        32
+
+*FindNextNeighbour, a:46 b :43, Equation:     2* x +    -2* y +        -4
+
+*FindNextNeighbour, a:46 b :44, Equation:     2* x +     2* y +       -68
+
+*FindNextNeighbour, a:46 b :49, Equation:    -4* x +     0* y +        72
+
+*FindNextNeighbour, a:46 b :47, Equation:    -2* x +    -2* y +        68
+
+*FindNextNeighbour, a:47 b :33, Equation:     0* x +    -2* y +        36
+
+*FindNextNeighbour, a:47 b :45, Equation:     2* x +     0* y +       -32
+
+*FindNextNeighbour, a:47 b :46, Equation:     2* x +     2* y +       -68
+
+*FindNextNeighbour, a:47 b :49, Equation:    -2* x +     2* y +        -4
+
+*FindNextNeighbour, a:47 b :48, Equation:    -2* x +     0* y +        32
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:1,2,3
+ Point i:1 (6,2) med DK til:16,18,2,0
+ Point i:2 (4,6) med DK til:3,0,1,18,20,23,6,5
+ Point i:3 (2,8) med DK til:0,2,5,4
+ Point i:4 (2,10) med DK til:3,5,7
+ Point i:5 (4,10) med DK til:4,3,2,6,8,7
+ Point i:6 (6,10) med DK til:5,2,23,26,8
+ Point i:7 (2,12) med DK til:4,5,8,10,9
+ Point i:8 (6,12) med DK til:6,26,11,10,7,5
+ Point i:9 (2,14) med DK til:7,10,12,15
+ Point i:10 (4,14) med DK til:9,7,8,11,13,12
+ Point i:11 (6,14) med DK til:10,8,26,29,31,13
+ Point i:12 (4,16) med DK til:10,13,14,15,9
+ Point i:13 (6,16) med DK til:12,10,11,31,14
+ Point i:14 (6,18) med DK til:13,31,34,15,12
+ Point i:15 (4,20) med DK til:9,12,14,34
+ Point i:16 (8,2) med DK til:17,19,18,1
+ Point i:17 (14,2) med DK til:36,19,16
+ Point i:18 (8,4) med DK til:16,19,20,2,1
+ Point i:19 (12,4) med DK til:17,36,40,22,21,20,18,16
+ Point i:20 (10,6) med DK til:19,21,23,2,18
+ Point i:21 (12,8) med DK til:22,25,24,23,20,19
+ Point i:22 (14,8) med DK til:21,19,40,41,25
+ Point i:23 (8,10) med DK til:6,2,20,21,24,27,26
+ Point i:24 (12,10) med DK til:21,25,28,27,23
+ Point i:25 (14,10) med DK til:24,21,22,41,43,28
+ Point i:26 (8,12) med DK til:8,6,23,27,29,11
+ Point i:27 (10,12) med DK til:26,23,24,28,30,29
+ Point i:28 (12,12) med DK til:27,24,25,43,30
+ Point i:29 (10,14) med DK til:27,30,32,31,11,26
+ Point i:30 (12,14) med DK til:29,27,28,43,45,32
+ Point i:31 (10,16) med DK til:29,32,34,14,13,11
+ Point i:32 (12,16) med DK til:31,29,30,45,33,34
+ Point i:33 (14,18) med DK til:35,34,32,45,47,48
+ Point i:34 (12,20) med DK til:15,14,31,32,33,35
+ Point i:35 (14,20) med DK til:34,33,48
+ Point i:36 (16,2) med DK til:37,40,19,17
+ Point i:37 (18,2) med DK til:38,39,40,36
+ Point i:38 (20,2) med DK til:39,37
+ Point i:39 (20,4) med DK til:42,40,37,38
+ Point i:40 (18,6) med DK til:41,22,19,36,37,39,42
+ Point i:41 (18,8) med DK til:40,42,44,43,25,22
+ Point i:42 (20,8) med DK til:44,41,40,39
+ Point i:43 (16,14) med DK til:45,30,28,25,41,44,46
+ Point i:44 (20,14) med DK til:49,46,43,41,42
+ Point i:45 (16,16) med DK til:43,46,47,33,32,30
+ Point i:46 (18,16) med DK til:45,43,44,49,47
+ Point i:47 (16,18) med DK til:33,45,46,49,48
+ Point i:48 (16,20) med DK til:35,33,47,49
+ Point i:49 (18,20) med DK til:48,47,46,44
+Number of not matching Delaunay neghbours:0
+Ant pkt:50, antIndrePkt:31, totAntKanter:128, totAntTriangler:79
+
+DT-kanter funnet:128 unike med 10 gj.snitt punkter per box p�    254.090msek , 
+dvs.   5.0818 millisek. per punkt, og:   5.12000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:38, max # DE :8 for point:2
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:     12.50  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:1,2,3
+ Point i:1 (6,2) med DK til:16,18,2,0
+ Point i:2 (4,6) med DK til:3,0,1,18,20,23,6,5
+ Point i:3 (2,8) med DK til:0,2,5,4
+ Point i:4 (2,10) med DK til:3,5,7
+ Point i:5 (4,10) med DK til:4,3,2,6,8,7
+ Point i:6 (6,10) med DK til:5,2,23,26,8
+ Point i:7 (2,12) med DK til:4,5,8,10,9
+ Point i:8 (6,12) med DK til:6,26,11,10,7,5
+ Point i:9 (2,14) med DK til:7,10,12,15
+ Point i:10 (4,14) med DK til:9,7,8,11,13,12
+ Point i:11 (6,14) med DK til:10,8,26,29,31,13
+ Point i:12 (4,16) med DK til:10,13,14,15,9
+ Point i:13 (6,16) med DK til:12,10,11,31,14
+ Point i:14 (6,18) med DK til:13,31,34,15,12
+ Point i:15 (4,20) med DK til:9,12,14,34
+ Point i:16 (8,2) med DK til:17,19,18,1
+ Point i:17 (14,2) med DK til:36,19,16
+ Point i:18 (8,4) med DK til:16,19,20,2,1
+ Point i:19 (12,4) med DK til:17,36,40,22,21,20,18,16
+ Point i:20 (10,6) med DK til:19,21,23,2,18
+ Point i:21 (12,8) med DK til:22,25,24,23,20,19
+ Point i:22 (14,8) med DK til:21,19,40,41,25
+ Point i:23 (8,10) med DK til:6,2,20,21,24,27,26
+ Point i:24 (12,10) med DK til:21,25,28,27,23
+ Point i:25 (14,10) med DK til:24,21,22,41,43,28
+ Point i:26 (8,12) med DK til:8,6,23,27,29,11
+ Point i:27 (10,12) med DK til:26,23,24,28,30,29
+ Point i:28 (12,12) med DK til:27,24,25,43,30
+ Point i:29 (10,14) med DK til:27,30,32,31,11,26
+ Point i:30 (12,14) med DK til:29,27,28,43,45,32
+ Point i:31 (10,16) med DK til:29,32,34,14,13,11
+ Point i:32 (12,16) med DK til:31,29,30,45,33,34
+ Point i:33 (14,18) med DK til:35,34,32,45,47,48
+ Point i:34 (12,20) med DK til:15,14,31,32,33,35
+ Point i:35 (14,20) med DK til:34,33,48
+ Point i:36 (16,2) med DK til:37,40,19,17
+ Point i:37 (18,2) med DK til:38,39,40,36
+ Point i:38 (20,2) med DK til:39,37
+ Point i:39 (20,4) med DK til:42,40,37,38
+ Point i:40 (18,6) med DK til:41,22,19,36,37,39,42
+ Point i:41 (18,8) med DK til:40,42,44,43,25,22
+ Point i:42 (20,8) med DK til:44,41,40,39
+ Point i:43 (16,14) med DK til:45,30,28,25,41,44,46
+ Point i:44 (20,14) med DK til:49,46,43,41,42
+ Point i:45 (16,16) med DK til:43,46,47,33,32,30
+ Point i:46 (18,16) med DK til:45,43,44,49,47
+ Point i:47 (16,18) med DK til:33,45,46,49,48
+ Point i:48 (16,20) med DK til:35,33,47,49
+ Point i:49 (18,20) med DK til:48,47,46,44
+** NUM_BOX:16,BOX_SIDE:8, MAX_X/Y:31, NUM_X/Y_BOXES:4, MIN_NUM_FOUND:5
+
+Tid: Initiate:    11.925 msek, dvs.    0.11925 msek. per punkt
+
+Tid: Cohull fant:27 punkter p� cohull. Tid:     0.537 msek, dvs.   0.005365 msek. per punkt
+Number of not matching Delaunay neghbours:0
+Ant pkt:100, antIndrePkt:73, totAntKanter:270, totAntTriangler:171
+
+DT-kanter funnet:270 unike med 10 gj.snitt punkter per box p�     11.425msek , 
+dvs.   0.1142 millisek. per punkt, og:   5.40000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:75, max # DE :9 for point:37
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:     32.75  ganger.
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    52.291 msek, dvs.    5.22914 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.187 msek, dvs.   0.018716 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     31.642msek , 
+dvs.   3.1642 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8

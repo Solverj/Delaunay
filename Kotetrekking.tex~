@@ -1,0 +1,23 @@
+\documentclass[norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
+\urlstyle{sf}
+\usepackage{babel,textcomp,csquotes,varioref,graphicx}
+\usepackage{amsmath,pstricks,subfigure,fixltx2e,caption,epsfig,tikz,bookman,listings}
+\usepackage[backend=biber,style=numeric-comp]{biblatex}
+\def\SB#1{\textsubscript{#1}}
+\title{Kotetrekking og kommentarer}
+\author{Sølve Rene Johnsen}
+
+\begin{document}
+\section{Endringer i DT.java}
+\begin{lstlisting}
+if (d.n < d.DebugLimit) g.drawString(p+"("+d.x[p]+","+d.y[p]+","+d.z[p]+")",
+			          xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
+\end{lstlisting}
+her har jeg lagt til +d.z[p] fra endring jeg har gjort under DelaunayAlg1.java.
+	     }
+\section{Endringer i DelaunayAlg1.java}
+\section{Ny fil: Zarray.java}
+
+\end{document}

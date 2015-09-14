@@ -18,7 +18,7 @@ class DT extends JFrame{
 		  pack();
 		  setVisible(true);
 
-		// angir foretrukket størrelse på dette lerretet.
+		// angir foretrukket stÃ¸rrelse pÃ¥ dette lerretet.
 		setPreferredSize(new Dimension(d.MAX_X+2*margin,d.MAX_Y+2*margin));
 	}
 
@@ -35,9 +35,9 @@ class DT extends JFrame{
                  SIZE = 7;
 
 			    //  g.drawString(""+p,xDraw(d.x[p]-SUB),yDraw(d.y[p]+SUB));
-			    if (d.n < d.DebugLimit) g.drawString(p+"("+d.x[p]+","+d.y[p]+")",
+			    if (d.n < d.DebugLimit) g.drawString(p+"("+d.x[p]+","+d.y[p]+","+d.z[p]+")",
 			          xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
-			    else if (d.n < d.DebugLimit*2)g.drawString(p+"",xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
+			    else if (d.n < d.DebugLimit*2) g.drawString(p+"",xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
 				 g.drawOval (xDraw(d.x[p],SIZE/2),yDraw(d.y[p],SIZE/2),SIZE,SIZE);
 				 g.fillOval (xDraw(d.x[p],SIZE/2),yDraw(d.y[p],SIZE/2),SIZE,SIZE);
 	     }
@@ -113,9 +113,8 @@ class DT extends JFrame{
 	d.println("drawDT: "+ s);
 	int max = Math.min (d.n, 100);
 	for (int i = 0;i < max; i++){
-		d.println("x["+i+"]="+d.x[i]+ ", y["+i+"]="+d.y[i]);
+		d.println("x["+i+"]="+d.x[i]+ ", y["+i+"]="+d.y[i] + ", z["+i+"]="+d.z[i]);
 	  }
    }// end drawDT
 
 }// end class DT
-

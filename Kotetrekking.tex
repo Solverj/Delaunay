@@ -1,0 +1,65 @@
+\documentclass[norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
+\urlstyle{sf}
+\usepackage{babel,textcomp,csquotes,varioref,graphicx}
+\usepackage{amsmath,pstricks,subfigure,fixltx2e,caption,epsfig,tikz,bookman,listings}
+\usepackage[backend=biber,style=numeric-comp]{biblatex}
+\def\SB#1{\textsubscript{#1}}
+\title{Kotetrekking og kommentarer}
+\author{Sølve Rene Johnsen}
+
+\begin{document}
+\section{Ny fil: Zarray.java}
+Har lagt til en ny fil har en metode som returnerer en tilfeldig fylt 
+z-array som er mellom -100 og 100.
+
+\section{Endringer i DelaunayAlg1.java}
+\begin{lstlisting}
+new Zarray().bygg(x,y,z); //linje 310
+
+void kotetrekking(){
+
+		class doubleInteger{
+			int x;
+			int y;
+		}
+
+		final int blueLowerBound = -100;
+		final int blueUpperBound = 0;
+
+		final int greenLowerBound = 1;
+		final int greenUpperBound = 50;
+
+		final int greyLowerBound = 51;
+		final int greyUpperBound = 100;
+
+		int a,b;
+		List<doubleInteger> blueSet = new LinkedList<doubleInteger>();
+		List<doubleInteger> greenSet = new LinkedList<doubleInteger>();
+		List<doubleInteger> greySet = new LinkedList<doubleInteger>();
+
+		for (int i = 0; i < n ; i++){
+			a = i;
+			for(int j = 0; j < delEdges[i].length; j++){
+				b = delEdges[i][j];
+			}
+		}
+
+	}
+\end{lstlisting}
+Jeg er ikke helt sikker på hvordan jeg skal gjøre matematikken som skal til
+for å trekke koter, jeg har noen idéer jeg vil diskutere med deg.
+\section{Endringer i DT.java}
+
+\begin{lstlisting}
+if (d.n < d.DebugLimit) g.drawString(p+"("+d.x[p]+","+d.y[p]+","+d.z[p]+")",
+			          xDraw(d.x[p],0),yDraw(d.y[p],SIZE/2+1));
+\end{lstlisting}
+her har jeg lagt til +d.z[p] fra endring jeg har gjort under DelaunayAlg1.java.
+
+
+\section{Kommentar}
+Jeg har gjort lite denne uken siden jeg har vært forlover i Sandnes for 
+min bestevenn, beklager det.
+\end{document}
