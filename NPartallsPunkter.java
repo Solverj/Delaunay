@@ -12,7 +12,7 @@ public class NPartallsPunkter {
 	final  int [] bitMask ={1,2,4,8,16,32,64,128};
 
 	NPartallsPunkter(int n) {
-		this.n =n;
+		this.n = n;
 		maxXY = Math.max(10,(int) Math.sqrt(n) * scaleFactor); // største X og Y verdi
 		while ((1<<xShift) < maxXY) xShift++;
 		xShift = xShift - 3;                    // 8 bits per byte

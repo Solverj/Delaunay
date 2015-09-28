@@ -7,7 +7,7 @@ public class Zarray {
 		this.n = z.length;
 		for (int i = 0; i < n; i++) {
 
-			z[i] = (int) ((Math.cos(x[i]) * Math.sin(y[i])) * 100);
+			z[i] = Math.abs((int) ((Math.cos(x[i]) + Math.cos(y[i])) * 100));
 			System.out.println(z[i]);
 		}
 	}

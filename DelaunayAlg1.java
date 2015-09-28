@@ -16,7 +16,7 @@ class DelaunayAlg1 {
 		} else {
 			fil = args[2];
 			data = new Out(args[3]);
-			d =new DelaunayAlg1();
+			d = new DelaunayAlg1();
 			d.PerformAlg(args);
 		}
 	} // end main
@@ -181,14 +181,7 @@ class DelaunayAlg1 {
 			int y;
 		}
 
-		final int blueLowerBound = -100;
-		final int blueUpperBound = 0;
-
-		final int greenLowerBound = 1;
-		final int greenUpperBound = 50;
-
-		final int greyLowerBound = 51;
-		final int greyUpperBound = 100;
+		final int ten = 10;
 
 		int a,b;
 		List<doubleInteger> blueSet = new LinkedList<doubleInteger>();

@@ -16,6 +16,7 @@ class DT extends JFrame{
 		  getContentPane().add(grafen, BorderLayout.CENTER);
 		  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		  pack();
+			d.kotetrekking();
 		  setVisible(true);
 
 		// angir foretrukket størrelse på dette lerretet.

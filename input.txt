@@ -1,0 +1,2397 @@
+** NUM_BOX:4,BOX_SIDE:5, MAX_X/Y:10, NUM_X/Y_BOXES:2, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (4,2) med DK til:
+ Point i:2 (2,6) med DK til:
+ Point i:3 (2,8) med DK til:
+ Point i:4 (4,10) med DK til:
+ Point i:5 (6,2) med DK til:
+ Point i:6 (6,6) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:5, NUM_X_BOXES:2, MAX_X:10
+box[0][]:0,2,4,
+box[1][]:5,6,7,
+box[2][]:8,9,10,
+
+Tid: Initiate:    47.344 msek, dvs.    4.73440 msek. per punkt
+
+Tid: Cohull fant:8 punkter p� cohull. Tid:     0.100 msek, dvs.   0.009972 msek. per punkt
+
+*FindNextNeighbour, a:0 b :1, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:1 b :6, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:1 b :2, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:5 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :6, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :4, Equation:    -4* x +    -6* y +        76
+
+*FindNextNeighbour, a:9 b :6, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:9 b :5, Equation:     4* x +    -4* y +       -16
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    53.931 msek, dvs.    5.39306 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.167 msek, dvs.   0.016665 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     35.481msek , 
+dvs.   3.5481 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    54.739 msek, dvs.    5.47386 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.148 msek, dvs.   0.014834 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     39.014msek , 
+dvs.   3.9014 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:   901.571 msek, dvs.   90.15708 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.198 msek, dvs.   0.019812 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�    115.684msek , 
+dvs.  11.5684 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:   115.790 msek, dvs.   11.57896 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.118 msek, dvs.   0.011756 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     50.523msek , 
+dvs.   5.0523 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    49.449 msek, dvs.    4.94485 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.092 msek, dvs.   0.009187 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     31.404msek , 
+dvs.   3.1404 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:   153.695 msek, dvs.   15.36953 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.108 msek, dvs.   0.010783 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     59.350msek , 
+dvs.   5.9350 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    50.665 msek, dvs.    5.06649 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.091 msek, dvs.   0.009081 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     33.553msek , 
+dvs.   3.3553 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    54.860 msek, dvs.    5.48596 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.119 msek, dvs.   0.011882 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     30.875msek , 
+dvs.   3.0875 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:   100.159 msek, dvs.   10.01588 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.187 msek, dvs.   0.018676 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     37.092msek , 
+dvs.   3.7092 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    46.100 msek, dvs.    4.61001 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.085 msek, dvs.   0.008458 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     32.974msek , 
+dvs.   3.2974 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    47.457 msek, dvs.    4.74572 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.075 msek, dvs.   0.007537 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     27.337msek , 
+dvs.   2.7337 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    59.680 msek, dvs.    5.96797 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.189 msek, dvs.   0.018920 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     30.328msek , 
+dvs.   3.0328 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    51.090 msek, dvs.    5.10897 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.105 msek, dvs.   0.010470 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     26.769msek , 
+dvs.   2.6769 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    50.171 msek, dvs.    5.01713 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.104 msek, dvs.   0.010351 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     29.440msek , 
+dvs.   2.9440 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    43.733 msek, dvs.    4.37329 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.113 msek, dvs.   0.011322 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     27.975msek , 
+dvs.   2.7975 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    47.965 msek, dvs.    4.79647 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.123 msek, dvs.   0.012344 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     34.776msek , 
+dvs.   3.4776 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    43.421 msek, dvs.    4.34212 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.086 msek, dvs.   0.008642 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     26.518msek , 
+dvs.   2.6518 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    46.595 msek, dvs.    4.65954 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.113 msek, dvs.   0.011268 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     30.871msek , 
+dvs.   3.0871 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    42.270 msek, dvs.    4.22701 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.087 msek, dvs.   0.008689 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     24.263msek , 
+dvs.   2.4263 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    44.384 msek, dvs.    4.43843 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.108 msek, dvs.   0.010821 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     29.548msek , 
+dvs.   2.9548 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    44.442 msek, dvs.    4.44417 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.105 msek, dvs.   0.010517 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     29.869msek , 
+dvs.   2.9869 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+** NUM_BOX:9,BOX_SIDE:4, MAX_X/Y:10, NUM_X/Y_BOXES:3, MIN_NUM_FOUND:5
+Dump av DataPoints: After sort
+ Point i:0 (2,2) med DK til:
+ Point i:1 (2,6) med DK til:
+ Point i:2 (2,8) med DK til:
+ Point i:3 (4,2) med DK til:
+ Point i:4 (6,2) med DK til:
+ Point i:5 (6,6) med DK til:
+ Point i:6 (4,10) med DK til:
+ Point i:7 (6,10) med DK til:
+ Point i:8 (10,4) med DK til:
+ Point i:9 (10,6) med DK til:
+
+BOX-dump:After Sort, BOX_SIDE:4, NUM_X_BOXES:3, MAX_X:10
+box[0][]:0,1,2,3,
+box[1][]:3,5,6,8,
+box[2][]:8,8,10,10,
+box[3][]:10,10,10,10,
+
+Tid: Initiate:    44.895 msek, dvs.    4.48951 msek. per punkt
+
+Tid: Cohull fant:9 punkter p� cohull. Tid:     0.077 msek, dvs.   0.007690 msek. per punkt
+
+*FindNextNeighbour, a:0 b :3, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :4, Equation:     0* x +     2* y +        -4
+
+*FindNextNeighbour, a:3 b :5, Equation:    -4* x +     2* y +        12
+
+*FindNextNeighbour, a:3 b :1, Equation:    -4* x +    -2* y +        20
+
+*FindNextNeighbour, a:4 b :8, Equation:    -2* x +     4* y +         4
+
+*FindNextNeighbour, a:4 b :5, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:8 b :9, Equation:    -2* x +     0* y +        20
+
+*FindNextNeighbour, a:8 b :5, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:9 b :7, Equation:    -4* x +    -4* y +        64
+
+*FindNextNeighbour, a:9 b :5, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:7 b :6, Equation:     0* x +    -2* y +        20
+
+*FindNextNeighbour, a:7 b :5, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:6 b :2, Equation:     2* x +    -2* y +        12
+
+*FindNextNeighbour, a:6 b :5, Equation:     4* x +     2* y +       -36
+
+*FindNextNeighbour, a:2 b :1, Equation:     2* x +     0* y +        -4
+
+*FindNextNeighbour, a:2 b :5, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:1 b :0, Equation:     4* x +     0* y +        -8
+
+*FindNextNeighbour, a:1 b :3, Equation:     4* x +     2* y +       -20
+
+*FindNextNeighbour, a:1 b :5, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :4, Equation:     4* x +     0* y +       -24
+
+*FindNextNeighbour, a:5 b :8, Equation:     2* x +     4* y +       -36
+
+*FindNextNeighbour, a:5 b :9, Equation:     0* x +     4* y +       -24
+
+*FindNextNeighbour, a:5 b :7, Equation:    -4* x +     0* y +        24
+
+*FindNextNeighbour, a:5 b :6, Equation:    -4* x +    -2* y +        36
+
+*FindNextNeighbour, a:5 b :2, Equation:    -2* x +    -4* y +        36
+
+*FindNextNeighbour, a:5 b :1, Equation:     0* x +    -4* y +        24
+
+*FindNextNeighbour, a:5 b :3, Equation:     4* x +    -2* y +       -12
+Dump av DataPoints: Etter Alg1 - alle 
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
+Number of not matching Delaunay neghbours:0
+Ant pkt:10, antIndrePkt:1, totAntKanter:18, totAntTriangler:9
+
+DT-kanter funnet:18 unike med 2 gj.snitt punkter per box p�     27.389msek , 
+dvs.   2.7389 millisek. per punkt, og:   3.60000 snitt kanter. per punkt.
+ Prosent av alle funnet:  100.0000%
+ prosent funnet (inkl missing):  100.0000%
+Min # DE :2 for point:0, max # DE :8 for point:5
+Cocirkulartitet (4 eller flere punkter, antar 4) funnet:      0.00  ganger.
+Dump av DataPoints: Etter n�rmeste nabo
+ Point i:0 (2,2) med DK til:3,1
+ Point i:1 (2,6) med DK til:0,3,5,2
+ Point i:2 (2,8) med DK til:1,5,6
+ Point i:3 (4,2) med DK til:4,5,1,0
+ Point i:4 (6,2) med DK til:8,5,3
+ Point i:5 (6,6) med DK til:4,8,9,7,6,2,1,3
+ Point i:6 (4,10) med DK til:2,5,7
+ Point i:7 (6,10) med DK til:6,5,9
+ Point i:8 (10,4) med DK til:9,5,4
+ Point i:9 (10,6) med DK til:7,5,8
