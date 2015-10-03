@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.geom.Line2D;
 
 class DT extends JFrame{
 	DelaunayAlg1 d;
@@ -16,7 +17,6 @@ class DT extends JFrame{
 		  getContentPane().add(grafen, BorderLayout.CENTER);
 		  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		  pack();
-			d.kotetrekking();
 		  setVisible(true);
 
 		// angir foretrukket størrelse på dette lerretet.
@@ -52,7 +52,8 @@ class DT extends JFrame{
 
 		int  xDraw(int x,int sub){return (int) (x*scale)+margin-sub;}
 		int  yDraw(int y, int sub){return(int)((d.MAX_Y-y)*scale)+ margin-sub;}
-
+		double xDdraw(double x, int sub){return (double) (x*scale)+margin-sub;}
+		double yDdraw(double y, int sub){return (double) ((d.MAX_Y-y)*scale)+margin-sub;}
 
 		 public void paintComponent(Graphics g) {
 			super.paintComponent(g);
@@ -97,7 +98,22 @@ class DT extends JFrame{
 					 // for every DE from 'p'
 					 g.drawLine (xDraw(d.x[p],0),yDraw(d.y[p],0), xDraw(d.x[q],0),yDraw(d.y[q],0));
 			     }
-			 }
+				 }
+			// Draw 10m kote
+				int[] naboer = d.beregnMuligeKoteNaboer(d.delEdges[0][0], d.delEdges[0][1]);
+				System.out.println("[0][0] = "+d.delEdges[0][0] + " [0][1] = " + d.delEdges[0][1]);
+				//for(i = 0; i < naboer.length; i++){
+					double[] p1 = d.kotetrekking(d.delEdges[0][0], naboer[0], 40);
+					System.out.println(d.delEdges[0][0] + " " + naboer[1]);
+					double[] p2 = d.kotetrekking(d.delEdges[0][0], naboer[1], 40);
+					//System.out.println("p1_0 "+ p1[0] + "p1_1 "+ p1[1] +"p2_0 "+ p2[0] +"p2_1 "+ p2[1]);
+					System.out.println(p2[0] +", "+ p2[1] + " to "+ p1[0] + ", "+ p1[1]);
+					Graphics2D g2 = (Graphics2D) g;
+					//g2.draw(new Line2D.Double(xDraw(1,0), yDraw(3,0), xDraw(1,0), yDraw(1,0)));
+					g2.draw(new Line2D.Double(xDdraw(p1[0],0) , yDdraw(p1[1],0), xDdraw(p2[0],0),yDdraw(p2[1],0)));
+					
+				//}
+
 
 		  } // end paintComponent
 
