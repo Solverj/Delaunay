@@ -198,23 +198,41 @@ class DelaunayAlg1 {
 	}
 	//prøver på nytt
 
+	double[] kotetrekking(int punkt1, int punkt2, int kote){
 
- 	double[] kotetrekking(int punkt1, int punkt2, int kote){
-		double [] koordinater = new double[2];
-		double a = (beregnDistanseMellomToPunkt(punkt1, punkt2)); //eucledian distance
-		double koteMulighet = Math.abs(z[punkt1]-z[punkt2]);
-		//if(koteMulighet < kote) return (double)-111111,0; //kan ikke kjøre kote om koten er større enn z2-z1
-		double k = a/(Math.abs(z[punkt1]-z[punkt2]))*kote; //blir hvor langt man skal bevege seg opp mot punkt2 fra punkt1
-		int y3 = y[punkt1]; //y. punkt i rettvinklet trekant
-		int x3 = x[punkt2]; //x. punkt i rettvinklet trekant
-		//double b = (double) Math.sqrt((Math.abs((x3 - x[punkt1])))^2 + Math.abs((y3 - y[punkt1]))^2);
-		double b = beregnDistanseMellomToPunkt(x3,y3,x[punkt1], y[punkt1]);
-		System.out.println("b: "+ b + "a:" +a );
-		double alpha = Math.acos(b/a);
-		System.out.println(alpha);
-		koordinater[0] = Math.cos(alpha) * k;
-		System.out.println(koordinater[0]);
-		koordinater[1] = Math.sin(alpha) * k;
+		int zMax = 0, zMin = 0;
+
+		if(z[punkt1] > z[punkt2]){
+			zMax = z[punkt1];
+			zMin = z[punkt2];
+		}else{
+			zMax = z[punkt2];
+			zMin = z[punkt1];
+		}
+		if(zMax < kote || zMin > kote) return new double[1]; //kan ikke trekke kote når den ikke finnes
+
+
+		double[] koordinater = new double[2];
+		double a = beregnDistanseMellomToPunkt(punkt1, punkt2); //
+		System.out.println(a);
+
+
+
+		// double [] koordinater = new double[2];
+		// double a = (beregnDistanseMellomToPunkt(punkt1, punkt2)); //eucledian distance
+		// double koteMulighet = Math.abs(z[punkt1]-z[punkt2]);
+		// //if(koteMulighet < kote) return (double)-111111,0; //kan ikke kjøre kote om koten er større enn z2-z1
+		// double k = a/(Math.abs(z[punkt1]-z[punkt2]))*kote; //blir hvor langt man skal bevege seg opp mot punkt2 fra punkt1
+		// int y3 = y[punkt1]; //y. punkt i rettvinklet trekant
+		// int x3 = x[punkt2]; //x. punkt i rettvinklet trekant
+		// //double b = (double) Math.sqrt((Math.abs((x3 - x[punkt1])))^2 + Math.abs((y3 - y[punkt1]))^2);
+		// double b = beregnDistanseMellomToPunkt(x3,y3,x[punkt1], y[punkt1]);
+		// System.out.println("b: "+ b + "a:" +a );
+		// double alpha = Math.acos(b/a);
+		// System.out.println(alpha);
+		// koordinater[0] = Math.cos(alpha) * k;
+		// System.out.println(koordinater[0]);
+		// koordinater[1] = Math.sin(alpha) * k;
 		return koordinater;
 	}
 
